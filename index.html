@@ -73,8 +73,8 @@
 
       <div class="hero-chips">
         <span class="hero-chip">📍 10 rue de l'Iragnon, 01310 Polliat</span>
-        <span class="hero-chip">📞 Secrétariat Médical : <a href="tel:0474304020" style="color: inherit; text-decoration: underline;"><strong>04 74 30 40 20</strong></a></span>
-        <span class="hero-chip">📞 Ligne directe Cabinet Dr Fey &amp; Jennifer : <a href="tel:0428360070" style="color: inherit; text-decoration: underline;"><strong>04 28 36 00 70</strong></a></span>
+        <span class="hero-chip">📞 Secrétariat Médical Général : <a href="tel:0474304020" style="color: inherit; text-decoration: underline;"><strong>04 74 30 40 20</strong></a></span>
+        <span class="hero-chip">🏥 3 Sites de proximité dans le village</span>
         <span class="hero-chip">♿ Bâtiment accessible PMR • Parking gratuit</span>
       </div>
     </section>
@@ -82,7 +82,7 @@
     <!-- RECHERCHE RAPIDE INSTANTANÉE -->
     <div class="search-bar-wrap">
       <span class="search-icon-inside" aria-hidden="true">🔍</span>
-      <input type="search" class="search-input" id="site-search-input" placeholder="Rechercher un médecin, Jennifer, IPA, infirmière, kiné, horaire..." aria-label="Rechercher sur le site de la Maison de santé">
+      <input type="search" class="search-input" id="site-search-input" placeholder="Rechercher un médecin, IPA, infirmière, kiné, orthophoniste, horaire..." aria-label="Rechercher sur le site de la Maison de santé">
       <div class="search-results-dropdown" id="site-search-results" role="listbox"></div>
     </div>
 
@@ -142,16 +142,19 @@
       </div>
     </section>
 
-    <!-- LES PROFESSIONNELS DE SANTÉ DE LA MAISON DE SANTÉ -->
+    <!-- LES PÔLES ET DISCIPLINES DE SANTÉ DE LA MAISON DE SANTÉ -->
     <section aria-labelledby="equipe-title">
       <div class="section-header">
-        <h2 class="section-title" id="equipe-title">L'Équipe Pluriprofessionnelle</h2>
-        <a href="equipe.html" class="section-link">Voir tous les professionnels →</a>
+        <div>
+          <div class="kit-badge-welcome" style="margin-bottom: 6px;">Offre de Soins Coordonnés</div>
+          <h2 class="section-title" id="equipe-title">Les Disciplines de Soins de la Maison de Santé</h2>
+        </div>
+        <a href="equipe.html" class="section-link">Voir le trombinoscope complet →</a>
       </div>
 
       <div class="pro-grid">
-        <!-- 1. Médecins Généralistes -->
-        <article class="pro-card">
+        <!-- 1. Cabinet Médical (Médecine Générale) -->
+        <article class="pro-card" style="border-top: 4px solid var(--primary);">
           <div class="pro-head">
             <div class="pro-avatar">🩺</div>
             <div class="pro-info">
@@ -160,88 +163,48 @@
             </div>
           </div>
           <div class="pro-details">
-            Dr BERNABEU-BRULÉ, Dr CHARTON, Dr FEY, Dr PIZA, Dr POTREL, Dr SILVENTE, Dr HENRY. Consultations sur rendez-vous du lundi au samedi matin.
-            <div class="pro-meta-item">📍 10 rue de l'Iragnon, Polliat</div>
-            <div class="pro-meta-item">📞 Secrétariat : 04 74 30 40 20 / 04 28 36 00 70</div>
+            5 médecins généralistes associés (Dr Bernabeu-Brulé, Dr Charton, Dr Fey, Dr Piza, Dr Potrel), accompagnés de médecins remplaçants, internes et d'une assistante médicale.
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon • Site Principal</div>
+            <div class="pro-meta-item">📞 Secrétariat : 04 74 30 40 20</div>
           </div>
           <div class="pro-actions">
-            <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="btn-pro-rdv">RDV CareSquad ↗</a>
-            <a href="equipe_medecins.html" class="btn-pro-call">Fiche du cabinet</a>
+            <a href="equipe_medecins.html" class="btn-pro-rdv" style="flex: 1.2;">Équipe &amp; RDV →</a>
+            <a href="tel:0474304020" class="btn-pro-call">Appeler</a>
           </div>
         </article>
 
-        <!-- 2. Infirmier en Pratique Avancée (IPA) -->
-        <article class="pro-card" style="border-top: 3px solid #06b6d4;">
+        <!-- 2. Pratique Avancée & Santé Publique (IPA & ASALÉE) -->
+        <article class="pro-card" style="border-top: 4px solid var(--accent);">
           <div class="pro-head">
-            <div class="pro-avatar" style="background: rgba(6, 182, 212, 0.12); color: #0891b2;">📋</div>
+            <div class="pro-avatar" style="background: var(--accent-light); color: var(--accent-deep);">📋</div>
             <div class="pro-info">
-              <span class="pro-role-badge" style="background: rgba(6, 182, 212, 0.15); color: #0891b2;">Pratique Avancée</span>
-              <h3 class="pro-name">M. Davide DOS REIS</h3>
+              <span class="pro-role-badge" style="background: var(--accent-light); color: var(--accent-deep);">Suivi &amp; Prévention</span>
+              <h3 class="pro-name">IPA &amp; Protocole ASALÉE</h3>
             </div>
           </div>
           <div class="pro-details">
-            Suivi clinique approfondi des pathologies chroniques stabilisées (diabète, HTA, insuffisance cardiaque), renouvellement d'ordonnances en binôme avec le Dr FEY.
-            <div class="pro-meta-item">📍 Au cabinet médical de Polliat</div>
-            <div class="pro-meta-item">🤝 Suivi en alternance avec le médecin traitant</div>
+            Accompagnement coordonné des maladies chroniques, éducation thérapeutique (diabète, BPCO, mémoire, tabac) avec <strong>M. Davide DOS REIS</strong> (IPA) et <strong>Mme Amandine ROTA COIN</strong> (ASALÉE).
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon (au cabinet médical)</div>
+            <div class="pro-meta-item">🤝 En lien direct avec votre médecin traitant</div>
           </div>
           <div class="pro-actions">
-            <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" rel="noopener" class="btn-pro-rdv" style="background: #06b6d4;">Message RDV ↗</a>
-            <a href="equipe_infirmier-pratique-avancee.html" class="btn-pro-call">En savoir plus</a>
+            <a href="equipe_medecins.html#soins-coordonnes" class="btn-pro-rdv" style="flex:1;">Consulter l'offre →</a>
           </div>
         </article>
 
-        <!-- 3. Assistante Médicale -->
-        <article class="pro-card" style="border-top: 3px solid #8b5cf6;">
+        <!-- 3. Cabinet Infirmier Libéral (IDEL) -->
+        <article class="pro-card" style="border-top: 4px solid #0d9488;">
           <div class="pro-head">
-            <div class="pro-avatar" style="background: rgba(139, 92, 246, 0.12); color: #7c3aed;">👩‍💼</div>
+            <div class="pro-avatar" style="background: #ccfbf1; color: #0f766e;">💉</div>
             <div class="pro-info">
-              <span class="pro-role-badge" style="background: rgba(139, 92, 246, 0.15); color: #7c3aed;">Assistante Médicale</span>
-              <h3 class="pro-name">Jennifer</h3>
+              <span class="pro-role-badge" style="background: #ccfbf1; color: #0f766e;">Soins 7j/7</span>
+              <h3 class="pro-name">Infirmières Libérales</h3>
             </div>
           </div>
           <div class="pro-details">
-            Accueil, pré-consultation (tension, constantes, questionnaires), préparation des dossiers complexes et rendez-vous d'évaluation.
-            <div class="pro-meta-item">📞 Ligne dédiée : 04 28 36 00 70 (IA 24h/7j)</div>
-            <div class="pro-meta-item">⏰ Rappels : Lun/Ven 8h-9h • Mar/Jeu 12h30-14h</div>
-          </div>
-          <div class="pro-actions">
-            <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" rel="noopener" class="btn-pro-rdv" style="background: #8b5cf6;">Laisser un message ↗</a>
-            <a href="equipe_assistante-medicale.html" class="btn-pro-call">Son rôle</a>
-          </div>
-        </article>
-
-        <!-- 4. Infirmière ASALÉE -->
-        <article class="pro-card">
-          <div class="pro-head">
-            <div class="pro-avatar">🌿</div>
-            <div class="pro-info">
-              <span class="pro-role-badge">Santé Publique</span>
-              <h3 class="pro-name">Mme Amandine ROTA COIN</h3>
-            </div>
-          </div>
-          <div class="pro-details">
-            Infirmière déléguée à la santé publique (Protocole Asalée) : éducation thérapeutique (diabète, BPCO), arrêt du tabac, repérage mémoire et risques CV. 100% pris en charge.
-            <div class="pro-meta-item">📍 Au sein du cabinet médical</div>
-            <div class="pro-meta-item">🤝 Consultations en lien direct avec votre médecin</div>
-          </div>
-          <div class="pro-actions">
-            <a href="equipe_infirmiere-asalee.html" class="btn-pro-rdv" style="flex:1;">Découvrir ASALÉE</a>
-          </div>
-        </article>
-
-        <!-- 5. Infirmières Libérales -->
-        <article class="pro-card">
-          <div class="pro-head">
-            <div class="pro-avatar">💉</div>
-            <div class="pro-info">
-              <span class="pro-role-badge">Soins Infirmiers 7j/7</span>
-              <h3 class="pro-name">Infirmières Libérales (IDEL)</h3>
-            </div>
-          </div>
-          <div class="pro-details">
-            Mme Sandra LEPLE, Mme Carole PERDRIX, Mme Angélique PRABEL, Mme Justine POIX. Soins à domicile 7j/7 de 6h à 19h30. Permanence au cabinet de 8h à 8h30.
-            <div class="pro-meta-item">📍 10 rue de l'Iragnon, Polliat</div>
-            <div class="pro-meta-item">📞 Ligne directe : 06 07 06 75 69</div>
+            Mme Sandra LEPLE, Mme Carole PERDRIX, Mme Angélique PRABEL, Mme Justine POIX. Soins à domicile et permanences au cabinet sur prescription.
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon • Permanence 8h-8h30</div>
+            <div class="pro-meta-item">📞 Contact direct : 06 07 06 75 69</div>
           </div>
           <div class="pro-actions">
             <a href="tel:0607067569" class="btn-pro-call">06 07 06 75 69</a>
@@ -249,18 +212,18 @@
           </div>
         </article>
 
-        <!-- 6. Masseurs-Kinésithérapeutes -->
-        <article class="pro-card">
+        <!-- 4. Masseurs-Kinésithérapeutes -->
+        <article class="pro-card" style="border-top: 4px solid #7c3aed;">
           <div class="pro-head">
-            <div class="pro-avatar">👐</div>
+            <div class="pro-avatar" style="background: #f3e8ff; color: #6b21a8;">👐</div>
             <div class="pro-info">
-              <span class="pro-role-badge">Kinésithérapie</span>
+              <span class="pro-role-badge" style="background: #f3e8ff; color: #6b21a8;">Pôle Rééducation</span>
               <h3 class="pro-name">Kinésithérapeutes</h3>
             </div>
           </div>
           <div class="pro-details">
-            Mme Brigitte PARRENIN, Mme Pauline COUARD. Rééducation fonctionnelle, respiratoire, motrice. Cabinet et domiciles sur le secteur.
-            <div class="pro-meta-item">🕒 Lun-Ven de 8h à 19h sur rendez-vous</div>
+            Mme Brigitte PARRENIN, Mme Pauline COUARD. Rééducation fonctionnelle, motrice, respiratoire et sportive au cabinet et à domicile.
+            <div class="pro-meta-item">📍 77 rue de l'Église • Pôle Kiné</div>
             <div class="pro-meta-item">📞 Téléphone : 04 74 47 07 81</div>
           </div>
           <div class="pro-actions">
@@ -269,74 +232,77 @@
           </div>
         </article>
 
-        <!-- 7. Ergothérapeutes -->
-        <article class="pro-card">
+        <!-- 5. Ergothérapeutes -->
+        <article class="pro-card" style="border-top: 4px solid #ea580c;">
           <div class="pro-head">
-            <div class="pro-avatar">🧩</div>
+            <div class="pro-avatar" style="background: #ffedd5; color: #c2410c;">🧩</div>
             <div class="pro-info">
-              <span class="pro-role-badge">Ergothérapie</span>
+              <span class="pro-role-badge" style="background: #ffedd5; color: #c2410c;">Autonomie &amp; Réadaptation</span>
               <h3 class="pro-name">Ergothérapeutes</h3>
             </div>
           </div>
           <div class="pro-details">
-            Mme Chloé CONVERT, Mme Mélissa GOY. Autonomie au quotidien, aménagement du domicile, réadaptation et pédiatrie (troubles des apprentissages).
+            Mme Chloé CONVERT, Mme Mélissa GOY. Autonomie au quotidien, aménagement du domicile, réadaptation et accompagnement des troubles des apprentissages.
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon • Site Principal</div>
             <div class="pro-meta-item">📞 Convert : 07 68 83 23 48 • Goy : 06 50 17 07 27</div>
           </div>
           <div class="pro-actions">
-            <a href="equipe_ergotherapeutes.html" class="btn-pro-rdv" style="flex:1;">Consulter les fiches</a>
+            <a href="equipe_ergotherapeutes.html" class="btn-pro-rdv" style="flex:1;">Consulter les fiches →</a>
           </div>
         </article>
 
-        <!-- 8. Orthophoniste -->
-        <article class="pro-card">
+        <!-- 6. Orthophoniste -->
+        <article class="pro-card" style="border-top: 4px solid #db2777;">
           <div class="pro-head">
-            <div class="pro-avatar">🗣️</div>
+            <div class="pro-avatar" style="background: #fce7f3; color: #be185d;">🗣️</div>
             <div class="pro-info">
-              <span class="pro-role-badge">Orthophonie</span>
+              <span class="pro-role-badge" style="background: #fce7f3; color: #be185d;">Orthophonie</span>
               <h3 class="pro-name">Mme Aline GRAND</h3>
             </div>
           </div>
           <div class="pro-details">
-            Bilans et rééducation des troubles du langage oral, écrit, et de la déglutition pour enfants et adultes. Inscription sur liste d'attente Perfactive.
-            <div class="pro-meta-item">📞 Contact : 07 56 82 86 75</div>
-            <div class="pro-meta-item">🌐 Inscription : perfactive.fr</div>
+            Bilans et rééducation des troubles du langage oral, écrit et de la déglutition pour enfants et adultes sur ordonnance.
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon • Site Principal</div>
+            <div class="pro-meta-item">🌐 Inscription sur liste d'attente : perfactive.fr</div>
           </div>
           <div class="pro-actions">
-            <a href="https://perfactive.fr" target="_blank" rel="noopener" class="btn-pro-rdv" style="flex:1;">Liste d'attente ↗</a>
+            <a href="https://perfactive.fr" target="_blank" rel="noopener" class="btn-pro-rdv">Liste d'attente ↗</a>
+            <a href="equipe_orthophoniste.html" class="btn-pro-call">Fiche</a>
           </div>
         </article>
 
-        <!-- 9. Diététicienne-Nutritionniste -->
-        <article class="pro-card">
+        <!-- 7. Diététicienne-Nutritionniste -->
+        <article class="pro-card" style="border-top: 4px solid #16a34a;">
           <div class="pro-head">
-            <div class="pro-avatar">🥗</div>
+            <div class="pro-avatar" style="background: #dcfce7; color: #15803d;">🥗</div>
             <div class="pro-info">
-              <span class="pro-role-badge">Nutrition</span>
+              <span class="pro-role-badge" style="background: #dcfce7; color: #15803d;">Nutrition</span>
               <h3 class="pro-name">Mme Jessy EVRARD</h3>
             </div>
           </div>
           <div class="pro-details">
-            Bilan nutritionnel, accompagnement du surpoids, diabète, troubles digestifs. Consultations au cabinet et téléconsultations.
+            Bilan nutritionnel, accompagnement bienveillant du surpoids, diabète, troubles digestifs et pathologies métaboliques.
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon • Site Principal</div>
             <div class="pro-meta-item">📞 Contact : 06 59 73 67 71</div>
-            <div class="pro-meta-item">🌐 Prise de RDV : madietenligne.fr</div>
           </div>
           <div class="pro-actions">
-            <a href="https://www.madietenligne.fr" target="_blank" rel="noopener" class="btn-pro-rdv" style="flex:1;">RDV diététique ↗</a>
+            <a href="https://www.madietenligne.fr" target="_blank" rel="noopener" class="btn-pro-rdv">RDV en ligne ↗</a>
+            <a href="equipe_dieteticienne.html" class="btn-pro-call">Fiche</a>
           </div>
         </article>
 
-        <!-- 10. Pharmacie de Polliat -->
-        <article class="pro-card">
+        <!-- 8. Pharmacie de Polliat -->
+        <article class="pro-card" style="border-top: 4px solid #15803d;">
           <div class="pro-head">
-            <div class="pro-avatar">💊</div>
+            <div class="pro-avatar" style="background: #dcfce7; color: #166534;">💊</div>
             <div class="pro-info">
-              <span class="pro-role-badge">Pharmacie</span>
+              <span class="pro-role-badge" style="background: #dcfce7; color: #166534;">Pôle Officine</span>
               <h3 class="pro-name">Pharmacie de Polliat</h3>
             </div>
           </div>
           <div class="pro-details">
-            Dr Aurélie GENTON, Dr Michèle SCHWARTZ. Délivrance des médicaments, conseils de santé, matériel médical, vaccinations et dépistages.
-            <div class="pro-meta-item">🕒 Du Lun au Samedi jusqu'à 19h30 (Sam 19h)</div>
+            Dr Aurélie GENTON, Dr Michèle SCHWARTZ. Délivrance sécurisée des médicaments, conseils de santé, matériel médical, vaccination et dépistages.
+            <div class="pro-meta-item">📍 117 route de Bourg-en-Bresse</div>
             <div class="pro-meta-item">📞 Téléphone : 04 74 30 40 48</div>
           </div>
           <div class="pro-actions">
@@ -345,22 +311,22 @@
           </div>
         </article>
 
-        <!-- 11. Radiologue / Échographiste -->
-        <article class="pro-card">
+        <!-- 9. Radiologue / Échographiste -->
+        <article class="pro-card" style="border-top: 4px solid #0284c7;">
           <div class="pro-head">
-            <div class="pro-avatar">🔬</div>
+            <div class="pro-avatar" style="background: #e0f2fe; color: #0369a1;">🔬</div>
             <div class="pro-info">
-              <span class="pro-role-badge">Radiologie</span>
+              <span class="pro-role-badge" style="background: #e0f2fe; color: #0369a1;">Imagerie Médicale</span>
               <h3 class="pro-name">Dr Véronica SULUGIUC</h3>
             </div>
           </div>
           <div class="pro-details">
-            Médecin échographiste radiologue. Échographies abdominales, pelviennes, urinaires, ostéo-articulaires et thyroïdiennes.
-            <div class="pro-meta-item">📅 Sur rendez-vous uniquement en ligne sur ordonnance</div>
-            <div class="pro-meta-item">📍 Au cabinet médical de Polliat</div>
+            Médecin échographiste radiologue. Réalisation d'échographies abdominales, pelviennes, urinaires, ostéo-articulaires et thyroïdiennes sur ordonnance.
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon (au cabinet médical)</div>
+            <div class="pro-meta-item">📅 Sur rendez-vous en ligne uniquement</div>
           </div>
           <div class="pro-actions">
-            <a href="equipe_radiologue.html" class="btn-pro-rdv" style="flex:1;">Prendre RDV échographie</a>
+            <a href="equipe_radiologue.html" class="btn-pro-rdv" style="flex:1;">Prendre RDV échographie →</a>
           </div>
         </article>
       </div>

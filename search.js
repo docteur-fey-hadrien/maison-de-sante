@@ -27,7 +27,9 @@ const SITE_INDEX = [
   { title: "Dr Véronica SULUGIUC", category: "Médecin Échographiste Radiologue", desc: "Échographies générales et spécialisées, uniquement sur rendez-vous en ligne.", url: "equipe_radiologue.html" },
   
   // Plateforme & Thématiques
-  { title: "CareSquad - Prise de Rendez-vous en Ligne", category: "Plateforme Patient", desc: "Portail officiel de réservation de rendez-vous en ligne et messagerie sécurisée : rdv.caresquad.fr/maisondesante-polliat.", url: "https://rdv.caresquad.fr/maisondesante-polliat" },
+  { title: "Prise de Rendez-vous en Ligne", category: "Rendez-vous", desc: "Sélectionnez votre médecin ou soignant pour réserver en ligne (CareSquad ou MadeForMed).", url: "rdv.html#choix-praticien" },
+  { title: "Portail CareSquad (Équipe Dr Fey)", category: "Plateforme Patient", desc: "Prise de RDV en ligne pour l'équipe du Dr FEY, Dr Silvente, Dr Henry, Jennifer et M. Dos Reis.", url: "https://rdv.caresquad.fr/maisondesante-polliat" },
+  { title: "Portail MadeForMed (Médecins & ASALÉE)", category: "Plateforme Patient", desc: "Prise de RDV en ligne pour Dr Bernabeu-Brulé, Dr Charton, Dr Piza, Dr Potrel et Mme Rota Coin.", url: "rdv.html#choix-praticien" },
   { title: "Planning Samedi Matin (Urgences)", category: "Permanence des Soins", desc: "Tableau de présence du médecin de garde le samedi de 8h à 12h pour les urgences médicales.", url: "rdv.html#samedi" },
   { title: "Demande de Médecin Traitant", category: "Nouveaux Patients", desc: "Conditions d'accès et démarche pour demander un médecin traitant à la Maison de Santé de Polliat.", url: "rdv.html#nouveaux-patients" },
   { title: "Projet de Santé de la MSP", category: "Coordination & ARS", desc: "Le projet de santé pluridisciplinaire, partage sécurisé des données de santé et labellisation ARS.", url: "projet-de-sante.html" },
