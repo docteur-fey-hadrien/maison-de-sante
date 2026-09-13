@@ -1,0 +1,552 @@
+<style>
+  :root {
+    --msp-primary: #1e40af;
+    --msp-primary-dark: #1e3a8a;
+    --msp-primary-soft: #eff6ff;
+    --msp-secondary: #0284c7;
+    --msp-secondary-soft: #e0f2fe;
+    --msp-accent: #0891b2;
+    --msp-accent-soft: #ecfeff;
+    --msp-green: #15803d;
+    --msp-green-soft: #f0fdf4;
+    --msp-amber: #b45309;
+    --msp-amber-soft: #fffbeb;
+    --msp-red: #b91c1c;
+    --msp-red-soft: #fef2f2;
+    --msp-text-main: #1e293b;
+    --msp-text-muted: #64748b;
+    --msp-card-bg: #ffffff;
+    --msp-border: #cbd5e1;
+    --msp-radius: 10px;
+  }
+
+  .msp-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--msp-text-main);
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+
+  .msp-container * {
+    box-sizing: border-box;
+  }
+
+  /* LIEN NOUVEAU SITE OFFICIEL */
+  .msp-top-banner {
+    display: block;
+    background: var(--msp-primary-soft);
+    border: 1px solid #bfdbfe;
+    border-radius: var(--msp-radius);
+    padding: 12px 16px;
+    text-align: center;
+    color: var(--msp-primary-dark);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 14px;
+    transition: background-color 0.2s;
+  }
+  .msp-top-banner:hover {
+    background: #dbeafe;
+    text-decoration: underline;
+  }
+
+  /* ALERTES */
+  .msp-alert {
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .msp-alert-mask {
+    background-color: var(--msp-red-soft);
+    color: var(--msp-red);
+    border: 1px solid #fecaca;
+    text-align: center;
+  }
+  .msp-alert-samedi {
+    background-color: var(--msp-amber-soft);
+    border: 2px solid #fcd34d;
+    border-radius: var(--msp-radius);
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .msp-samedi-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--msp-amber);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .msp-btn-samedi {
+    background-color: var(--msp-amber);
+    color: #ffffff !important;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  /* GUIDE CONTACT - 2 CABINETS SEPARES */
+  .msp-contact-split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .msp-contact-box {
+    flex: 1;
+    min-width: 280px;
+    padding: 16px;
+    border-radius: var(--msp-radius);
+    text-align: center;
+    border: 1px solid var(--msp-border);
+  }
+  .msp-box-cab1 {
+    background-color: #f8fafc;
+    border-top: 4px solid var(--msp-primary);
+  }
+  .msp-box-cab2 {
+    background-color: var(--msp-secondary-soft);
+    border-top: 4px solid var(--msp-secondary);
+  }
+  .msp-contact-label {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .msp-phone-big {
+    display: block;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+    margin: 8px 0;
+  }
+  .msp-phone-big:hover {
+    text-decoration: underline;
+  }
+  .msp-contact-desc {
+    font-size: 12px;
+    color: var(--msp-text-muted);
+    display: block;
+  }
+
+  /* AVERTISSEMENT */
+  .msp-notice {
+    font-size: 12px;
+    color: var(--msp-red);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 8px;
+    background: #fff;
+    border: 1px dashed #fca5a5;
+    border-radius: 6px;
+  }
+
+  /* TITRES DE SECTIONS */
+  .msp-section-heading {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--msp-primary-dark);
+    margin: 28px 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* GRILLES */
+  .msp-grid-2col {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .msp-card {
+    background: var(--msp-card-bg);
+    border: 1px solid var(--msp-border);
+    border-radius: var(--msp-radius);
+    padding: 16px;
+    flex: 1 1 400px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .msp-card-full {
+    flex: 1 1 100%;
+  }
+
+  /* BADGES */
+  .msp-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+  .msp-badge-cab1 { background: #e2e8f0; color: #334155; }
+  .msp-badge-cab2 { background: var(--msp-secondary-soft); color: var(--msp-secondary); }
+  .msp-badge-ipa { background: var(--msp-accent-soft); color: var(--msp-accent); }
+  .msp-badge-asalee { background: var(--msp-green-soft); color: var(--msp-green); }
+  .msp-badge-doctolib { background: var(--msp-green-soft); color: var(--msp-green); }
+  .msp-badge-paramed { background: #f1f5f9; color: #475569; }
+
+  .msp-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: var(--msp-text-main);
+  }
+  .msp-subtitle {
+    font-size: 12px;
+    color: var(--msp-text-muted);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .msp-details {
+    font-size: 13px;
+    color: var(--msp-text-main);
+    margin-bottom: 12px;
+  }
+  .msp-details p {
+    margin: 4px 0;
+  }
+
+  /* BOUTONS D'ACTION */
+  .msp-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+  .msp-btn {
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none !important;
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+    transition: opacity 0.2s;
+  }
+  .msp-btn:hover {
+    opacity: 0.9;
+  }
+  .msp-btn-primary { background: var(--msp-primary); color: #ffffff !important; }
+  .msp-btn-secondary { background: var(--msp-secondary); color: #ffffff !important; }
+  .msp-btn-green { background: var(--msp-green); color: #ffffff !important; }
+  .msp-btn-light { background: #f1f5f9; color: var(--msp-text-main) !important; border: 1px solid #cbd5e1; }
+
+  /* TABLEAU CONTACTS PARAMEDICAUX */
+  .msp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .msp-table th {
+    background: #f1f5f9;
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 700;
+    border-bottom: 2px solid var(--msp-border);
+  }
+  .msp-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+  }
+  .msp-table a {
+    color: var(--msp-primary);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  /* LISTE D'ATTENTE NOUVEAUX PATIENTS */
+  .msp-waitlist-box {
+    background-color: var(--msp-green-soft);
+    border-left: 5px solid var(--msp-green);
+    border-radius: 6px;
+    padding: 14px;
+    margin: 24px 0 16px 0;
+    text-align: center;
+  }
+  .msp-waitlist-box p {
+    font-size: 13px;
+    color: #14532d;
+    margin: 0 0 10px 0;
+  }
+  .msp-btn-waitlist {
+    background: var(--msp-green);
+    color: #ffffff !important;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none !important;
+    display: inline-block;
+  }
+
+  .msp-footer-note {
+    font-size: 11px;
+    color: var(--msp-text-muted);
+    text-align: center;
+    margin-top: 18px;
+    padding-top: 10px;
+    border-top: 1px solid #e2e8f0;
+  }
+</style>
+
+<div class="msp-container">
+
+  <!-- LIEN VERS LE SITE OFFICIEL COMPLET -->
+  <a href="https://docteur-fey-hadrien.github.io/maison-de-sante/" target="_blank" class="msp-top-banner">
+    Decouvrir le nouveau site d'information de la Maison de Sante de Polliat (Acces, Equipe, Prevention) -&gt;
+  </a>
+
+  <!-- BANDEAU MASQUE -->
+  <div class="msp-alert msp-alert-mask">
+    PORT DU MASQUE OBLIGATOIRE EN CAS DE SYMPTOMES RESPIRATOIRES (FIEVRE, TOUX, RHUME)
+  </div>
+
+  <!-- URGENCES SAMEDI MATIN -->
+  <div class="msp-alert-samedi">
+    <span class="msp-samedi-title">Urgences du Samedi Matin (8h00 - 12h00)</span>
+    <p style="font-size: 13px; margin: 0 0 8px 0; color: #78350f;">
+      Un medecin generaliste assure uniquement les soins urgents ne pouvant attendre le lundi. Aucun certificat ni renouvellement.
+    </p>
+    <a href="https://www.maisondesante-polliat.fr/1961/planning-medecin-samedi" target="_blank" class="msp-btn-samedi">
+      Consulter le planning de garde du samedi
+    </a>
+  </div>
+
+  <!-- GUIDE CONTACT : DEUX CABINETS SEPARES -->
+  <div class="msp-contact-split">
+    
+    <!-- Cabinet 1 : 4 Medecins -->
+    <div class="msp-contact-box msp-box-cab1">
+      <span class="msp-contact-label" style="color: var(--msp-primary);">Cabinet Drs Bernabeu-Brule, Charton, Piza, Potrel</span>
+      <a href="tel:0474304020" class="msp-phone-big" style="color: var(--msp-primary);">04 74 30 40 20</a>
+      <span class="msp-contact-desc">
+        Secretariat : Valentine et Oceane (du lundi au vendredi, 8h-12h et 14h-17h)<br>
+        Prise de rendez-vous en ligne : portail MadeForMed ci-dessous.
+      </span>
+    </div>
+
+    <!-- Cabinet 2 : Dr Fey & Equipe -->
+    <div class="msp-contact-box msp-box-cab2">
+      <span class="msp-contact-label" style="color: var(--msp-secondary);">Cabinet Dr Fey, Dr Silvente, Dr Henry</span>
+      <a href="tel:0428360070" class="msp-phone-big" style="color: var(--msp-secondary);">04 28 36 00 70</a>
+      <span class="msp-contact-desc">
+        Standard direct vocal 24h/7j et assistante medicale (Jennifer)<br>
+        Prise de rendez-vous et messages : portail CareSquad ci-dessous.
+      </span>
+    </div>
+
+  </div>
+
+  <!-- AVERTISSEMENT MEDECIN TRAITANT -->
+  <div class="msp-notice">
+    <strong>ATTENTION :</strong> Selectionnez exclusivement le planning de <strong>votre medecin traitant declare</strong>.<br>
+    En cas d'urgence vitale immediate, composez le <a href="tel:15" style="color: var(--msp-red); font-weight: 800;">15 (SAMU)</a>.
+  </div>
+
+  <!-- SECTION 1 : MEDECINS GENERALISTES -->
+  <div class="msp-section-heading">1. Medecins Generalistes de Polliat (10 rue de l'Iragnon)</div>
+
+  <div class="msp-grid-2col">
+
+    <!-- Dr Fey -->
+    <div class="msp-card" style="border-top: 3px solid var(--msp-secondary);">
+      <span class="msp-badge msp-badge-cab2">Cabinet 2 • Portail CareSquad</span>
+      <h3 class="msp-title">Dr Hadrien FEY</h3>
+      <span class="msp-subtitle">Medecin generaliste • Equipe avec Dr Silvente, Dr Henry et Jennifer</span>
+      <div class="msp-details">
+        <p>Ligne directe : <a href="tel:0428360070">04 28 36 00 70</a></p>
+      </div>
+      <div class="msp-actions">
+        <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" class="msp-btn msp-btn-secondary">RDV CareSquad</a>
+        <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" class="msp-btn msp-btn-light">Message assistante</a>
+      </div>
+    </div>
+
+    <!-- Dr Bernabeu-Brule -->
+    <div class="msp-card" style="border-top: 3px solid var(--msp-primary);">
+      <span class="msp-badge msp-badge-cab1">Cabinet 1 • Portail MadeForMed</span>
+      <h3 class="msp-title">Dr Marie-Agnes BERNABEU-BRULE</h3>
+      <span class="msp-subtitle">Medecin generaliste associee</span>
+      <div class="msp-details">
+        <p>Secretariat : <a href="tel:0474304020">04 74 30 40 20</a></p>
+      </div>
+      <div class="msp-actions">
+        <a href="https://docteur-bernabeu-brule.sante.pro/rdv" target="_blank" class="msp-btn msp-btn-primary">Prendre RDV</a>
+        <a href="https://docteur-bernabeu-brule.sante.pro/contact" target="_blank" class="msp-btn msp-btn-light">Message</a>
+      </div>
+    </div>
+
+    <!-- Dr Charton -->
+    <div class="msp-card" style="border-top: 3px solid var(--msp-primary);">
+      <span class="msp-badge msp-badge-cab1">Cabinet 1 • Portail MadeForMed</span>
+      <h3 class="msp-title">Dr Damien CHARTON</h3>
+      <span class="msp-subtitle">Medecin generaliste associe</span>
+      <div class="msp-details">
+        <p>Secretariat : <a href="tel:0474304020">04 74 30 40 20</a></p>
+      </div>
+      <div class="msp-actions">
+        <a href="https://docteur-charton.sante.pro/rdv" target="_blank" class="msp-btn msp-btn-primary">Prendre RDV</a>
+        <a href="https://docteur-charton.sante.pro/contact" target="_blank" class="msp-btn msp-btn-light">Message</a>
+      </div>
+    </div>
+
+    <!-- Dr Piza -->
+    <div class="msp-card" style="border-top: 3px solid var(--msp-primary);">
+      <span class="msp-badge msp-badge-cab1">Cabinet 1 • Portail MadeForMed</span>
+      <h3 class="msp-title">Dr Kathleen PIZA</h3>
+      <span class="msp-subtitle">Medecin generaliste associee</span>
+      <div class="msp-details">
+        <p>Secretariat : <a href="tel:0474304020">04 74 30 40 20</a></p>
+      </div>
+      <div class="msp-actions">
+        <a href="https://docteur-piza.sante.pro/rdv" target="_blank" class="msp-btn msp-btn-primary">Prendre RDV</a>
+        <a href="https://docteur-piza.sante.pro/contact" target="_blank" class="msp-btn msp-btn-light">Message</a>
+      </div>
+    </div>
+
+    <!-- Dr Potrel -->
+    <div class="msp-card" style="border-top: 3px solid var(--msp-primary);">
+      <span class="msp-badge msp-badge-cab1">Cabinet 1 • Portail MadeForMed</span>
+      <h3 class="msp-title">Dr Elodie POTREL</h3>
+      <span class="msp-subtitle">Medecin generaliste associee</span>
+      <div class="msp-details">
+        <p>Secretariat : <a href="tel:0474304020">04 74 30 40 20</a></p>
+      </div>
+      <div class="msp-actions">
+        <a href="https://potrel.sante.pro/rdv" target="_blank" class="msp-btn msp-btn-primary">Prendre RDV</a>
+        <a href="https://potrel.sante.pro/contact" target="_blank" class="msp-btn msp-btn-light">Message</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 2 : SOINS COORDONNES (IPA & ASALEE) -->
+  <div class="msp-section-heading">2. Pratique Avancee (IPA) &amp; Sante Publique (ASALEE)</div>
+
+  <div class="msp-grid-2col">
+
+    <!-- Davide Dos Reis - IPA -->
+    <div class="msp-card" style="border-top: 3px solid var(--msp-accent);">
+      <span class="msp-badge msp-badge-ipa">Binome exclusif equipe Dr Fey • CareSquad</span>
+      <h3 class="msp-title">M. Davide DOS REIS (IPA)</h3>
+      <span class="msp-subtitle">Infirmier en Pratique Avancee (Master clinique Bac+5)</span>
+      <div class="msp-details">
+        <p>Suivi approfondi des maladies chroniques stabilisees (diabete, HTA, insuffisance cardiaque, BPCO), bilans biologiques et ajustement d'ordonnances en alternance avec l'equipe du Dr Fey.</p>
+        <p>Telephone : <a href="tel:0428360070">04 28 36 00 70</a></p>
+      </div>
+      <div class="msp-actions">
+        <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" class="msp-btn" style="background: var(--msp-accent); color: white !important;">Demande de RDV IPA</a>
+      </div>
+    </div>
+
+    <!-- Amandine Rota Coin - ASALEE -->
+    <div class="msp-card" style="border-top: 3px solid var(--msp-green);">
+      <span class="msp-badge msp-badge-asalee">Transversale • Tous les medecins de la MSP</span>
+      <h3 class="msp-title">Mme Amandine ROTA COIN (ASALEE)</h3>
+      <span class="msp-subtitle">Infirmiere deleguee a la sante publique (Protocole ASALEE)</span>
+      <div class="msp-details">
+        <p>Education therapeutique, diabete, sevrage tabagique, souffle/spirometrie, reperage precoce memoire et cardiovasculaire. Prise en charge a 100% pour tous les patients de la MSP.</p>
+      </div>
+      <div class="msp-actions">
+        <a href="https://infirmiere-rotacoin.sante.pro/rdv" target="_blank" class="msp-btn msp-btn-green">Prendre RDV ASALEE</a>
+        <a href="https://infirmiere-rotacoin.sante.pro/contact" target="_blank" class="msp-btn msp-btn-light">Message</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTION 3 : ECHOGRAPHIE DIAGNOSTIQUE -->
+  <div class="msp-section-heading">3. Medecin Echographiste Radiologue (10 rue de l'Iragnon)</div>
+
+  <div class="msp-card msp-card-full" style="border-top: 3px solid #0284c7; margin-bottom: 20px;">
+    <span class="msp-badge msp-badge-doctolib">Prise de RDV en ligne sur Doctolib</span>
+    <h3 class="msp-title">Dr Veronica SULUGIUC</h3>
+    <span class="msp-subtitle">Medecin radiologue echographiste (osteotendineux, abdomen, urinaire, thyroide)</span>
+    <div class="msp-details">
+      <p>Consultations sur ordonnance medicale obligatoire. <strong>Aucun standard telephonique :</strong> la prise de rendez-vous s'effectue exclusivement en ligne. Merci de ne pas contacter le secretariat des medecins generalistes pour les echographies.</p>
+    </div>
+    <div class="msp-actions">
+      <a href="https://www.doctolib.fr/radiologue/polliat/veronica-sulugiuc" target="_blank" class="msp-btn msp-btn-green" style="max-width: 320px;">Prendre RDV sur Doctolib -&gt;</a>
+    </div>
+  </div>
+
+  <!-- SECTION 4 : TOUTE L'EQUIPE PARAMEDICALE ET OFFICINE -->
+  <div class="msp-section-heading">4. Autres Professionnels de Sante de la MSP de Polliat</div>
+
+  <table class="msp-table">
+    <thead>
+      <tr>
+        <th>Discipline</th>
+        <th>Professionnels</th>
+        <th>Coordonnees &amp; Prise de contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Infirmieres Liberales (IDEL)</strong></td>
+        <td>Mmes Leple, Perdrix, Prabel, Poix</td>
+        <td><a href="tel:0607067569">06 07 06 75 69</a> (7j/7, domicile et cabinet)</td>
+      </tr>
+      <tr>
+        <td><strong>Kinesitherapeutes</strong></td>
+        <td>Mme Parrenin, Mme Couard (77 rue de l'Eglise)</td>
+        <td><a href="tel:0474470781">04 74 47 07 81</a> (sur rendez-vous)</td>
+      </tr>
+      <tr>
+        <td><strong>Ergotherapeutes</strong></td>
+        <td>Mme Convert / Mme Goy (10 rue de l'Iragnon)</td>
+        <td><a href="tel:0768832348">07 68 83 23 48</a> / <a href="tel:0650170727">06 50 17 07 27</a></td>
+      </tr>
+      <tr>
+        <td><strong>Orthophoniste</strong></td>
+        <td>Mme Aline Grand (10 rue de l'Iragnon)</td>
+        <td><a href="tel:0756828675">07 56 82 86 75</a> • <a href="https://perfactive.fr" target="_blank">perfactive.fr</a> (liste d'attente)</td>
+      </tr>
+      <tr>
+        <td><strong>Dieteticienne</strong></td>
+        <td>Mme Jessy Evrard (10 rue de l'Iragnon)</td>
+        <td><a href="tel:0659736771">06 59 73 67 71</a> • <a href="https://www.madietenligne.fr" target="_blank">madietenligne.fr</a></td>
+      </tr>
+      <tr>
+        <td><strong>Pharmacie de Polliat</strong></td>
+        <td>Dr Genton, Dr Schwartz (117 route de Bourg)</td>
+        <td><a href="tel:0474304048">04 74 30 40 48</a> (officine associee)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- NOUVEAUX PATIENTS -->
+  <div class="msp-waitlist-box">
+    <p><strong>Nouveaux patients :</strong> Les medecins generalistes ne prennent pas de nouveaux patients en acces direct actuellement.</p>
+    <a href="https://www.maisondesante-polliat.fr/2818/nouveaux-patients-demande-de-medecin-traitant" target="_blank" class="msp-btn-waitlist">
+      Demande d'inscription sur la liste d'attente
+    </a>
+  </div>
+
+  <div class="msp-footer-note">
+    Maison de Sante Pluridisciplinaire Multisites de Polliat (01310) • Structure labelisee par l'Agence Regionale de Sante (ARS) Auvergne-Rhone-Alpes.
+  </div>
+
+</div>
