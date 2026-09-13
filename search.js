@@ -5,7 +5,7 @@
 const SITE_INDEX = [
   // Médecins & Équipe Médicale
   { title: "Dr Hadrien FEY", category: "Médecin Généraliste", desc: "Médecin de famille, Maître de stage des universités (Lyon 1). Échographie clinique, dermoscopie, pédiatrie, gynécologie. Tél : 04 28 36 00 70.", url: "equipe_medecins.html" },
-  { title: "Dr Lou SILVENTE", category: "Médecin Généraliste Assistante", desc: "Médecin assistante aux côtés du Dr FEY. Consultations de médecine générale et suivi régulier.", url: "equipe_dr-lou-silvlente.html" },
+  { title: "Internes en Médecine Générale", category: "Formation Médicale", desc: "Internes accueillis en stage et encadrés exclusivement par le Dr Hadrien FEY (Lyon 1).", url: "equipe_medecins.html" },
   { title: "Dr Eva HENRY", category: "Docteur Junior (10e année)", desc: "Interne Docteur Junior (à compter de nov. 2026 pour 1 an). Consultations en pleine autonomie clinique supervisée.", url: "equipe_dr-junior-eva-henry.html" },
   { title: "Dr Marie-Agnès BERNABEU-BRULÉ", category: "Médecin Généraliste", desc: "Médecin généraliste associée au 10 rue de l'Iragnon. Tél : 04 74 30 40 20.", url: "equipe_medecins.html" },
   { title: "Dr Damien CHARTON", category: "Médecin Généraliste", desc: "Médecin généraliste associé au 10 rue de l'Iragnon. Tél : 04 74 30 40 20.", url: "equipe_medecins.html" },
@@ -28,7 +28,7 @@ const SITE_INDEX = [
   
   // Plateforme & Thématiques
   { title: "Prise de Rendez-vous en Ligne", category: "Rendez-vous", desc: "Sélectionnez votre médecin ou soignant pour réserver en ligne (CareSquad ou MadeForMed).", url: "rdv.html#choix-praticien" },
-  { title: "Portail CareSquad (Équipe Dr Fey)", category: "Plateforme Patient", desc: "Prise de RDV en ligne pour l'équipe du Dr FEY, Dr Silvente, Dr Henry, Jennifer et M. Dos Reis.", url: "https://rdv.caresquad.fr/maisondesante-polliat" },
+  { title: "Portail CareSquad (Équipe Dr Fey)", category: "Plateforme Patient", desc: "Prise de RDV en ligne pour l'équipe du Dr FEY, ses internes, Jennifer et M. Dos Reis.", url: "https://rdv.caresquad.fr/maisondesante-polliat" },
   { title: "Portail MadeForMed (Médecins & ASALÉE)", category: "Plateforme Patient", desc: "Prise de RDV en ligne pour Dr Bernabeu-Brulé, Dr Charton, Dr Piza, Dr Potrel et Mme Rota Coin.", url: "rdv.html#choix-praticien" },
   { title: "Planning Samedi Matin (Urgences)", category: "Permanence des Soins", desc: "Tableau de présence du médecin de garde le samedi de 8h à 12h pour les urgences médicales.", url: "rdv.html#samedi" },
   { title: "Demande de Médecin Traitant", category: "Nouveaux Patients", desc: "Conditions d'accès et démarche pour demander un médecin traitant à la Maison de Santé de Polliat.", url: "rdv.html#nouveaux-patients" },
