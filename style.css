@@ -96,6 +96,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
 }
 
 .urgent-bar-content {
@@ -157,8 +159,9 @@ body {
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--card-border);
   position: sticky;
-  top: 44px;
+  top: var(--urgent-bar-height, 44px);
   z-index: 999;
+  transition: top 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-container {
@@ -979,17 +982,31 @@ textarea.form-control {
    RESPONSIVE (MOBILE & TABLETTES)
    ========================================================================== */
 @media (max-width: 900px) {
+  /* Rétractation du bandeau d'appel au 15 lors du scroll vers le bas sur mobile */
+  body.urgent-retracted .urgent-bar {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: none;
+  }
+  
+  body.urgent-retracted .main-nav {
+    top: 0;
+  }
+
   .nav-menu {
-    position: fixed;
-    top: 96px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     background: #ffffff;
     flex-direction: column;
     padding: 20px;
-    border-bottom: 1px solid var(--card-border);
+    border-bottom: 2px solid var(--card-border);
     box-shadow: var(--shadow-lg);
     display: none;
+    max-height: calc(100vh - 75px);
+    overflow-y: auto;
   }
   
   .nav-menu.nav-open {
