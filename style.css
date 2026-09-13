@@ -3,14 +3,21 @@
    ========================================================================== */
 
 :root {
-  --primary: #0d9488;          /* Teal médical chaleureux */
-  --primary-dark: #0f766e;
-  --primary-deep: #115e59;
-  --primary-light: #ccfbf1;
-  --primary-ultralight: #f0fdfa;
+  /* Nuances de Bleus Zen & Coopération (inspiré du Kit de Survie & d'Accueil de la MSP de Polliat) */
+  --primary: #1e40af;          /* Bleu santé réconfortant, équilibré et zen */
+  --primary-dark: #1e3a8a;     /* Bleu nuit profond */
+  --primary-deep: #172554;     /* Bleu marine foncé très lisible */
+  --primary-light: #dbeafe;    /* Bleu pastel doux */
+  --primary-ultralight: #eff6ff; /* Voile azuré zen */
   
-  --accent: #0284c7;           /* Bleu soignant */
-  --accent-light: #e0f2fe;
+  --accent: #0284c7;           /* Bleu azur lumineux */
+  --accent-light: #e0f2fe;     /* Ciel très doux */
+  --accent-deep: #0369a1;
+  
+  --warm: #d97706;             /* Ocre doré chaleureux du Kit MSP */
+  --warm-light: #fef3c7;       /* Fond ambré accueillant */
+  --warm-border: #fde68a;      /* Liseré ambré */
+  --warm-deep: #92400e;        /* Texte ambré contrasté */
   
   --urgent: #dc2626;           /* Rouge urgence */
   --urgent-bg: #fef2f2;
@@ -22,17 +29,17 @@
   --success: #16a34a;
   --success-bg: #f0fdf4;
   
-  --text-main: #0f172a;        /* Slate foncé lisible */
-  --text-muted: #475569;
+  --text-main: #1e293b;        /* Ardoise sombre, très doux pour les yeux */
+  --text-muted: #475569;       /* Gris ardoise secondaire */
   --text-light: #64748b;
   
-  --bg-body: #f8fafc;
-  --card-bg: rgba(255, 255, 255, 0.94);
+  --bg-body: #f8fafc;          /* Fond blanc cassé bleuté très apaisant */
+  --card-bg: rgba(255, 255, 255, 0.97);
   --card-border: #e2e8f0;
   
-  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 4px 14px -1px rgba(15, 23, 42, 0.07), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 10px 25px -3px rgba(15, 23, 42, 0.1), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 2px 5px rgba(30, 58, 95, 0.04);
+  --shadow-md: 0 4px 16px -1px rgba(30, 58, 95, 0.08), 0 2px 6px -1px rgba(30, 58, 95, 0.04);
+  --shadow-lg: 0 12px 28px -4px rgba(30, 58, 95, 0.12), 0 4px 10px -2px rgba(30, 58, 95, 0.04);
   
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -71,8 +78,8 @@ body {
   inset: 0;
   z-index: -1;
   background: 
-    radial-gradient(circle at 10% 20%, rgba(13, 148, 136, 0.04) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(2, 132, 199, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 10% 15%, rgba(30, 64, 175, 0.035) 0%, transparent 45%),
+    radial-gradient(circle at 90% 85%, rgba(2, 132, 199, 0.035) 0%, transparent 45%),
     #f8fafc;
 }
 
@@ -231,12 +238,12 @@ body {
   padding: 8px 16px !important;
   border-radius: var(--radius-pill) !important;
   font-weight: 700 !important;
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.25);
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.25);
 }
 
 .nav-cta-rdv:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.35);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.35);
 }
 
 .burger-btn {
@@ -785,7 +792,7 @@ main {
 
 .search-input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.15);
+  box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.15);
 }
 
 .search-icon-inside {
@@ -875,7 +882,7 @@ main {
 
 .form-control:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.15);
 }
 
 textarea.form-control {
@@ -1022,5 +1029,149 @@ textarea.form-control {
   
   .content-wrapper {
     padding: 22px;
+  }
+}
+
+/* ==========================================================================
+   STYLE ZEN & COOPÉRATIF INSPIRÉ DU KIT D'ACCUEIL MSP
+   ========================================================================== */
+
+.kit-badge-welcome {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--warm-light);
+  border: 1px solid var(--warm-border);
+  color: var(--warm-deep);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+}
+
+.kit-quote-card {
+  background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-lg);
+  padding: 24px 28px;
+  margin: 32px 0;
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+}
+
+.kit-quote-text {
+  font-size: 1.15rem;
+  font-weight: 750;
+  color: var(--primary-deep);
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.kit-quote-sub {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.kit-sites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 28px 0;
+}
+
+.kit-site-card {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+}
+
+.kit-site-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #93c5fd;
+}
+
+.kit-site-pill {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 10px;
+}
+
+.kit-site-pill.batiment { background: #dbeafe; color: #1e40af; }
+.kit-site-pill.kine { background: #f3e8ff; color: #6b21a8; }
+.kit-site-pill.pharma { background: #dcfce7; color: #166534; }
+
+.kit-site-title {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.kit-site-addr {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.kit-site-pros {
+  font-size: 0.84rem;
+  color: #475569;
+  border-top: 1px dashed var(--card-border);
+  padding-top: 10px;
+}
+
+.kit-illustration-banner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin: 28px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.kit-illustration-banner img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.kit-illustration-text h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-deep);
+  margin-bottom: 8px;
+}
+
+.kit-illustration-text p {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .kit-illustration-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .kit-illustration-banner img {
+    max-width: 180px;
   }
 }
