@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prise de Rendez-vous &amp; Urgences | Maison de Santé de Polliat</title>
-  <meta name="description" content="Prendre rendez-vous à la Maison de santé de Polliat. Choisissez votre praticien : portails en ligne CareSquad et MadeForMed, gestion des urgences, samedi matin.">
+  <title>Prendre Rendez-vous • Urgences du jour | Maison de Santé de Polliat</title>
+  <meta name="description" content="Prendre rendez-vous à la Maison de santé de Polliat. Choisissez votre praticien : portails en ligne, démarches pour problème aigu du jour en médecine générale, garde du samedi matin.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
   <script src="nav.js" defer></script>
@@ -37,7 +37,7 @@
       <nav class="nav-menu" id="nav-menu">
         <a href="index.html">Accueil</a>
         <a href="equipe.html">L'Équipe</a>
-        <a href="rdv.html" class="active">Rendez-vous &amp; Urgences</a>
+        <a href="rdv.html" class="active">Prendre RDV • Urgences du jour</a>
         <a href="projet-de-sante.html">Projet de Santé</a>
         <a href="prevention.html">Prévention</a>
         <a href="acces-contact.html">Accès &amp; Contact</a>
@@ -51,21 +51,21 @@
     <div class="breadcrumb">
       <a href="index.html">Accueil</a>
       <span>›</span>
-      <span>Rendez-vous &amp; Urgences</span>
+      <span>Prendre RDV • Urgences du jour</span>
     </div>
 
     <div class="hero-section" style="padding-top: 10px; margin-bottom: 24px;">
-      <h1 class="page-title">Modalités de Rendez-vous &amp; Urgences</h1>
+      <h1 class="page-title">Prendre Rendez-vous &amp; Urgences du jour</h1>
       <p class="page-lead">
-        Choisissez votre praticien référent ci-dessous pour accéder directement à son portail sécurisé de prise de rendez-vous en ligne (CareSquad ou MadeForMed) ou le contacter.
+        Choisissez votre praticien référent ci-dessous pour accéder directement à son portail sécurisé de prise de rendez-vous programmé, ou consultez la démarche pour un problème aigu du jour auprès de votre médecin traitant.
       </p>
     </div>
 
     <!-- SOMMAIRE RAPIDE -->
     <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px;">
-      <a href="#choix-praticien" class="hero-chip">🗓️ Choisir mon Praticien</a>
-      <a href="#urgences" class="hero-chip">🚨 Urgences du Jour</a>
-      <a href="#samedi" class="hero-chip">📅 Garde du Samedi</a>
+      <a href="#choix-praticien" class="hero-chip">🗓️ Choisir mon Praticien (RDV programmé)</a>
+      <a href="#urgences" class="hero-chip">🚨 Problème Aigu du Jour (Médecins)</a>
+      <a href="#samedi" class="hero-chip">📅 Garde du Samedi Matin</a>
       <a href="#nouveaux-patients" class="hero-chip">👥 Nouveaux Patients</a>
       <a href="#conges" class="hero-chip">🏖️ Congés des Médecins</a>
     </div>
@@ -306,22 +306,29 @@
     <!-- SECTION 2 : URGENCES DU JOUR -->
     <section id="urgences" class="content-wrapper" style="margin-bottom: 32px; border-left: 6px solid var(--urgent);">
       <div class="hero-badge" style="background: var(--urgent-bg); border-color: var(--urgent-border); color: var(--urgent);">
-        Soins Non Programmés
+        Soins Non Programmés • Médecine Générale
       </div>
       <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">
-        2. Problème de Santé Urgent du Jour
+        2. Problème aigu du jour (Médecine générale)
       </h2>
       <p style="color: var(--text-muted); margin-bottom: 16px;">
-        Des créneaux d'urgence sont libérés chaque matin pour les problèmes médicaux aigus apparus récemment (fièvre importante, infection aiguë, traumatisme récent, détresse respiratoire modérée).
+        Des créneaux de soins non programmés sont libérés chaque matin pour les problèmes médicaux aigus apparus récemment (fièvre importante, infection aiguë, traumatisme récent, détresse respiratoire modérée).
       </p>
+
+      <!-- ENCART CLARIFICATION PERIMETRE -->
+      <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid var(--primary); border-radius: 10px; padding: 14px 16px; margin-bottom: 18px; font-size: 0.9rem; color: #334155; line-height: 1.5;">
+        <strong style="color: var(--primary-deep);">ℹ️ Périmètre des urgences à la Maison de Santé :</strong><br>
+        La prise en charge des urgences et soins non programmés du jour concerne <strong>exclusivement les médecins généralistes</strong> pour leurs patients déclarés.<br>
+        Les infirmières (IPA, ASALEE, IDEL) et les professionnels de la rééducation (kinésithérapeutes, ergothérapeutes, orthophoniste, diététicienne) consultent <strong>exclusivement sur rendez-vous programmé</strong> et ne sont pas habilités à prendre en charge les urgences.
+      </div>
 
       <div class="alert-box danger">
         <div class="alert-icon">⚠️</div>
         <div>
-          <strong>Procédure pour obtenir une consultation du jour :</strong><br>
-          1. Consultez votre portail en ligne (<a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" style="font-weight: 700; color: inherit; text-decoration: underline;">CareSquad</a> pour le Dr Fey / internes ou vos portails habituels MadeForMed) dès le matin.<br>
-          2. S'il n'y a plus de créneau ouvert en ligne : contactez le secrétariat dès <strong>8h00</strong> au <a href="tel:0474304020" style="color: inherit; font-weight: 800; text-decoration: underline;">04 74 30 40 20</a> (Dr Bernabeu, Charton, Piza, Potrel) ou le standard dédié au <a href="tel:0428360070" style="color: inherit; font-weight: 800; text-decoration: underline;">04 28 36 00 70</a> (Dr Fey &amp; son équipe).<br>
-          3. <strong>En cas d'urgence vitale à toute heure : composez immédiatement le <a href="tel:15" style="color: inherit; text-decoration: underline;">15 (SAMU)</a>.</strong>
+          <strong>Procédure pour obtenir une consultation d'urgence du jour :</strong><br>
+          1. Consultez votre portail en ligne (<a href="https://drfeyhadrien.fr" target="_blank" rel="noopener" style="font-weight: 700; color: inherit; text-decoration: underline;">Site du Dr Fey</a> pour le cabinet Dr Fey et ses internes, ou vos portails habituels MadeForMed pour les Drs Bernabeu-Brulé, Charton, Piza, Potrel) dès le matin.<br>
+          2. S'il n'y a plus de créneau ouvert en ligne : contactez le secrétariat dès <strong>8h00</strong> au <a href="tel:0474304020" style="color: inherit; font-weight: 800; text-decoration: underline;">04 74 30 40 20</a> (Dr Bernabeu, Charton, Piza, Potrel) ou au <a href="tel:0428360070" style="color: inherit; font-weight: 800; text-decoration: underline;">04 28 36 00 70</a> (Cabinet Dr Fey &amp; son équipe).<br>
+          3. <strong>En cas d'urgence vitale immédiate à toute heure : composez immédiatement le <a href="tel:15" style="color: inherit; text-decoration: underline;">15 (SAMU)</a>.</strong>
         </div>
       </div>
     </section>

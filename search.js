@@ -28,7 +28,7 @@ const SITE_INDEX = [
   
   // Plateforme & Thématiques
   { title: "Prise de Rendez-vous en Ligne", category: "Rendez-vous", desc: "Sélectionnez votre médecin ou soignant pour réserver en ligne (CareSquad ou MadeForMed).", url: "rdv.html#choix-praticien" },
-  { title: "Portail CareSquad (Équipe Dr Fey)", category: "Plateforme Patient", desc: "Prise de RDV en ligne pour l'équipe du Dr FEY, ses internes, Jennifer et M. Dos Reis.", url: "https://rdv.caresquad.fr/maisondesante-polliat" },
+  { title: "Site Cabinet Dr Fey & son équipe", category: "Plateforme Patient", desc: "Prise de RDV en ligne pour le Dr FEY, ses internes, Jennifer et M. Dos Reis.", url: "https://drfeyhadrien.fr" },
   { title: "Portail MadeForMed (Médecins & ASALÉE)", category: "Plateforme Patient", desc: "Prise de RDV en ligne pour Dr Bernabeu-Brulé, Dr Charton, Dr Piza, Dr Potrel et Mme Rota Coin.", url: "rdv.html#choix-praticien" },
   { title: "Planning Samedi Matin (Urgences)", category: "Permanence des Soins", desc: "Tableau de présence du médecin de garde le samedi de 8h à 12h pour les urgences médicales.", url: "rdv.html#samedi" },
   { title: "Demande de Médecin Traitant", category: "Nouveaux Patients", desc: "Conditions d'accès et démarche pour demander un médecin traitant à la Maison de Santé de Polliat.", url: "rdv.html#nouveaux-patients" },
