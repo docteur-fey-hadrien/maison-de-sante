@@ -24,7 +24,7 @@ const SITE_INDEX = [
   { title: "Orthophoniste", category: "Orthophonie", desc: "Mme Aline GRAND. Inscription liste d'attente Perfactive. Tél : 07 56 82 86 75.", url: "equipe_orthophoniste.html" },
   { title: "Diététicienne-Nutritionniste", category: "Nutrition & Diététique", desc: "Mme Jessy EVRARD. Suivi personnalisé et téléconsultation madietenligne.fr. Tél : 06 59 73 67 71.", url: "equipe_dieteticienne.html" },
   { title: "Pharmacie de Polliat", category: "Pharmacie d'Officine", desc: "Dr Aurélie GENTON, Dr Michèle SCHWARTZ. Délivrance, conseils, vaccinations. Tél : 04 74 30 40 48.", url: "equipe_pharmaciennes.html" },
-  { title: "Dr Véronica SULUGIUC", category: "Médecin Échographiste Radiologue", desc: "Échographies générales et spécialisées, uniquement sur rendez-vous en ligne.", url: "equipe_radiologue.html" },
+  { title: "Dr Véronica SULUGIUC (Échographies)", category: "Médecin Échographiste Radiologue", desc: "Échographies ostéo-articulaires et viscérales sur ordonnance. Prise de rendez-vous sur Doctolib.", url: "https://www.doctolib.fr/radiologue/polliat/veronica-sulugiuc" },
   
   // Plateforme & Thématiques
   { title: "Prise de Rendez-vous en Ligne", category: "Rendez-vous", desc: "Sélectionnez votre médecin ou soignant pour réserver en ligne (CareSquad ou MadeForMed).", url: "rdv.html#choix-praticien" },
