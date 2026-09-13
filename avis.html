@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boîte à Idées &amp; Questionnaire de Satisfaction | Maison de Santé de Polliat</title>
+  <meta name="description" content="Votre avis compte pour nous. Partagez vos suggestions et remplissez le questionnaire de satisfaction de la Maison de santé de Polliat pour améliorer nos services.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="nav.js" defer></script>
+</head>
+<body>
+
+  <div class="bg-decor"></div>
+
+  <aside class="urgent-bar">
+    <div class="urgent-bar-content">
+      <div class="urgent-bar-left">
+        <span class="pulse-dot"></span>
+        <span><strong>Urgence vitale</strong> : composez le <strong>15</strong></span>
+      </div>
+      <a href="tel:15" class="urgent-btn">📞 Appeler le 15</a>
+    </div>
+  </aside>
+
+  <header class="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="logo-embleme.png" alt="Logo" class="nav-brand-logo">
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">Maison de Santé de Polliat</span>
+          <span class="nav-brand-sub">Coordination pluriprofessionnelle de proximité</span>
+        </div>
+      </a>
+      <button class="burger-btn" id="burger-btn" aria-label="Menu">☰ Menu</button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html">Accueil</a>
+        <a href="equipe.html">L'Équipe</a>
+        <a href="rdv.html">Rendez-vous &amp; Urgences</a>
+        <a href="projet-de-sante.html">Projet de Santé</a>
+        <a href="prevention.html">Prévention</a>
+        <a href="acces-contact.html">Accès &amp; Contact</a>
+        <a href="avis.html" class="active">Boîte à idées</a>
+        <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="nav-cta-rdv">Prendre RDV ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>›</span>
+      <span>Boîte à idées &amp; Satisfaction</span>
+    </div>
+
+    <article class="content-wrapper">
+      <div class="hero-badge">Écoute des Usagers</div>
+      <h1 class="page-title">Boîte à Idées &amp; Questionnaire de Satisfaction</h1>
+      <p class="page-lead">
+        La Maison de santé de Polliat s'engage dans une démarche continue d'amélioration de la qualité de ses soins et de son accueil. Vos remarques et suggestions sont précieuses pour faire évoluer notre structure.
+      </p>
+
+      <div class="alert-box warning">
+        <div class="alert-icon">⚠️</div>
+        <div>
+          <strong>Important :</strong> Ce formulaire est destiné exclusivement au recueil de vos avis sur le fonctionnement de la Maison de santé. <strong>Aucune demande médicale, urgence ou prise de rendez-vous ne peut être traitée par ce biais</strong>. Pour une urgence, composez le 15. Pour un rendez-vous, contactez directement votre praticien.
+        </div>
+      </div>
+
+      <!-- FORMULAIRE INTERACTIF -->
+      <form id="feedback-form" onsubmit="handleFeedbackSubmit(event)" style="margin-top: 24px;">
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label" for="fb-motif">Objet de votre retour *</label>
+            <select class="form-control" id="fb-motif" required>
+              <option value="">Sélectionnez une catégorie...</option>
+              <option value="satisfaction">Questionnaire de satisfaction global</option>
+              <option value="idee">Boîte à idées / Proposition d'amélioration</option>
+              <option value="accueil">Accueil &amp; Secrétariat</option>
+              <option value="locaux">Locaux, salle d'attente, accessibilité</option>
+              <option value="autre">Autre remarque</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="fb-service">Service concerné</label>
+            <select class="form-control" id="fb-service">
+              <option value="general">Maison de santé en général</option>
+              <option value="medecins">Cabinet médical (Médecins généralistes)</option>
+              <option value="infirmieres">Cabinet infirmier (ASALÉE / Libérales)</option>
+              <option value="kine">Kinésithérapie</option>
+              <option value="ergo">Ergothérapie</option>
+              <option value="ortho">Orthophonie</option>
+              <option value="diet">Diététique</option>
+              <option value="pharma">Pharmacie</option>
+              <option value="radio">Échographie</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="form-label">Votre niveau global de satisfaction *</label>
+            <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 6px;">
+              <label style="display: flex; align-items: center; gap: 6px; font-size: 0.94rem; cursor: pointer;">
+                <input type="radio" name="note" value="5" required checked> ⭐⭐⭐⭐⭐ Très satisfait
+              </label>
+              <label style="display: flex; align-items: center; gap: 6px; font-size: 0.94rem; cursor: pointer;">
+                <input type="radio" name="note" value="4"> ⭐⭐⭐⭐ Satisfait
+              </label>
+              <label style="display: flex; align-items: center; gap: 6px; font-size: 0.94rem; cursor: pointer;">
+                <input type="radio" name="note" value="3"> ⭐⭐⭐ Moyen
+              </label>
+              <label style="display: flex; align-items: center; gap: 6px; font-size: 0.94rem; cursor: pointer;">
+                <input type="radio" name="note" value="2"> ⭐⭐ Insatisfait
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="form-label" for="fb-message">Vos observations, suggestions ou compliments *</label>
+            <textarea class="form-control" id="fb-message" placeholder="Détaillez vos impressions, vos propositions d'aménagement ou ce qui vous a particulièrement satisfait..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="fb-name">Votre nom ou prénom (facultatif - vous pouvez rester anonyme)</label>
+            <input type="text" class="form-control" id="fb-name" placeholder="Ex. Jean Dupont">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="fb-email">Votre adresse email (facultatif si réponse souhaitée)</label>
+            <input type="email" class="form-control" id="fb-email" placeholder="Ex. jean.dupont@email.com">
+          </div>
+
+          <div class="form-group full-width" style="margin-top: 10px;">
+            <button type="submit" class="btn-submit">
+              <span>✉️</span>
+              <span>Transmettre votre contribution</span>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- MESSAGE DE CONFIRMATION APRES SOUMISSION -->
+      <div id="fb-success" class="alert-box info" style="display: none; margin-top: 24px;">
+        <div class="alert-icon">✅</div>
+        <div>
+          <strong>Merci beaucoup pour votre retour !</strong><br>
+          Votre contribution a bien été enregistrée. Elle sera étudiée lors de nos réunions d'équipe pour continuer à perfectionner l'accueil et les services offerts aux usagers de la Maison de santé de Polliat.
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <script>
+    function handleFeedbackSubmit(e) {
+      e.preventDefault();
+      document.getElementById('feedback-form').style.display = 'none';
+      document.getElementById('fb-success').style.display = 'flex';
+      document.getElementById('fb-success').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+  <footer class="main-footer">
+    <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+      <div>&copy; 2026 Maison de Santé de Polliat • Boîte à idées</div>
+      <div><a href="index.html">Accueil</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>

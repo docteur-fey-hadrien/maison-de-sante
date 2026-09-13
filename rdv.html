@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prise de Rendez-vous &amp; Urgences | Maison de Santé de Polliat</title>
+  <meta name="description" content="Guide de prise de rendez-vous et gestion des urgences à la Maison de santé de Polliat : plateforme CareSquad, urgences du jour, samedi matin, nouveaux patients, téléconsultations.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="nav.js" defer></script>
+  <script src="planning.js" defer></script>
+</head>
+<body>
+
+  <div class="bg-decor"></div>
+
+  <aside class="urgent-bar">
+    <div class="urgent-bar-content">
+      <div class="urgent-bar-left">
+        <span class="pulse-dot"></span>
+        <span><strong>Urgence vitale</strong> : composez le <strong>15</strong></span>
+      </div>
+      <a href="tel:15" class="urgent-btn">📞 Appeler le 15</a>
+    </div>
+  </aside>
+
+  <header class="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="logo-embleme.png" alt="Logo" class="nav-brand-logo">
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">Maison de Santé de Polliat</span>
+          <span class="nav-brand-sub">Coordination pluriprofessionnelle de proximité</span>
+        </div>
+      </a>
+      <button class="burger-btn" id="burger-btn" aria-label="Menu">☰ Menu</button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html">Accueil</a>
+        <a href="equipe.html">L'Équipe</a>
+        <a href="rdv.html" class="active">Rendez-vous &amp; Urgences</a>
+        <a href="projet-de-sante.html">Projet de Santé</a>
+        <a href="prevention.html">Prévention</a>
+        <a href="acces-contact.html">Accès &amp; Contact</a>
+        <a href="avis.html">Boîte à idées</a>
+        <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="nav-cta-rdv">Prendre RDV ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>›</span>
+      <span>Rendez-vous &amp; Urgences</span>
+    </div>
+
+    <div class="hero-section" style="padding-top: 10px; margin-bottom: 24px;">
+      <h1 class="page-title">Modalités de Rendez-vous &amp; Urgences</h1>
+      <p class="page-lead">
+        Retrouvez ici toutes les informations pratiques pour bien vous orienter selon votre situation médicale et réserver en ligne sur <strong>CareSquad</strong>.
+      </p>
+    </div>
+
+    <!-- EN-TETE PORTAIL CARESQUAD -->
+    <div style="background: linear-gradient(135deg, var(--primary-ultralight), #e0f2fe); border: 2px solid var(--primary-light); border-radius: var(--radius-lg); padding: 26px; margin-bottom: 36px; box-shadow: var(--shadow-sm); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px;">
+      <div>
+        <div class="hero-badge" style="background: white; margin-bottom: 8px;">Portail Patient Officiel</div>
+        <h2 style="font-size: 1.45rem; font-weight: 850; color: var(--primary-deep); margin-bottom: 6px;">
+          Prise de Rendez-vous en Ligne sur CareSquad
+        </h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 650px;">
+          Réservez directement votre consultation avec vos médecins généralistes et votre équipe soignante 24h/24 et 7j/7.
+        </p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="font-size: 1rem; padding: 12px 24px;">
+          Ouvrir CareSquad (RDV en ligne) ↗
+        </a>
+        <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" rel="noopener" class="triage-btn" style="background: white; border: 1px solid var(--card-border); color: var(--text-main); font-size: 0.88rem;">
+          ✉️ Laisser un message à l'assistante ↗
+        </a>
+      </div>
+    </div>
+
+    <!-- SOMMAIRE RAPIDE -->
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px;">
+      <a href="#urgences" class="hero-chip">🚨 Urgence du Jour</a>
+      <a href="#samedi" class="hero-chip">📅 Garde du Samedi</a>
+      <a href="#annuaire-rdv" class="hero-chip">🗓️ RDV par Profession</a>
+      <a href="#nouveaux-patients" class="hero-chip">👥 Nouveaux Patients</a>
+      <a href="#conges" class="hero-chip">🏖️ Congés &amp; Absences</a>
+      <a href="#teleconsultation" class="hero-chip">💻 Téléconsultation</a>
+    </div>
+
+    <!-- SECTION 1 : URGENCES DU JOUR -->
+    <section id="urgences" class="content-wrapper" style="margin-bottom: 32px; border-left: 6px solid var(--urgent);">
+      <div class="hero-badge" style="background: var(--urgent-bg); border-color: var(--urgent-border); color: var(--urgent);">
+        Soins Non Programmés
+      </div>
+      <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">
+        1. Vous avez un problème de santé urgent survenu ce jour
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 16px;">
+        Des créneaux d'urgence sont libérés chaque jour pour les affections aiguës ne pouvant pas attendre (douleur brutale, infection avec forte fièvre, brûlure, entorse récente, détresse modérée).
+      </p>
+
+      <div class="alert-box danger">
+        <div class="alert-icon">⚠️</div>
+        <div>
+          <strong>Démarche à suivre :</strong><br>
+          1. Connectez-vous sur <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" style="color: inherit; font-weight: 800; text-decoration: underline;">CareSquad</a> dès le matin pour vérifier les créneaux d'urgence ouverts.<br>
+          2. S'il n'y a plus de disponibilité en ligne : contactez le secrétariat médical au <a href="tel:0474304020" style="color: inherit; font-weight: 800; text-decoration: underline;">04 74 30 40 20</a> ou la ligne directe Dr Fey / Jennifer au <a href="tel:0428360070" style="color: inherit; font-weight: 800; text-decoration: underline;">04 28 36 00 70</a> dès <strong>8h00</strong>. Des plages sont strictement réservées et attribuées après évaluation du degré d'urgence.<br>
+          3. <strong>En cas d'urgence vitale à toute heure : composez immédiatement le 15.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 : SAMEDI MATIN DYNAMIQUE -->
+    <section id="samedi" class="content-wrapper" style="margin-bottom: 32px; border-left: 6px solid var(--warning);">
+      <div class="hero-badge" style="background: var(--warning-bg); border-color: #fde68a; color: var(--warning);">
+        Permanence du Samedi Matin
+      </div>
+      <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">
+        2. Planning de Garde du Samedi Matin (8h00 - 12h00)
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 14px;">
+        Le samedi matin, les médecins généralistes de Polliat se relaient afin qu'un praticien prenne en charge l'ensemble des <strong>urgences strictes</strong> du cabinet.
+      </p>
+      <div class="alert-box warning">
+        <div class="alert-icon">ℹ️</div>
+        <div>
+          <strong>Rappel impératif :</strong> Aucun certificat médical, renouvellement d'ordonnance ou rendez-vous de routine ne pourra être honoré le samedi matin. Merci de respecter cette règle dans l'intérêt des patients souffrants nécessitant une prise en charge urgente.
+        </div>
+      </div>
+
+      <!-- TABLEAU CHARGÉ DYNAMIQUEMENT PAR PLANNING.JS -->
+      <div id="samedi-planning-container" class="planning-box" style="margin-bottom: 0;">
+        <div style="text-align: center; color: var(--text-muted); padding: 14px;">Chargement du calendrier de garde...</div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 : ANNUAIRE DES RDV PAR DISCIPLINE -->
+    <section id="annuaire-rdv" class="content-wrapper" style="margin-bottom: 32px; border-left: 6px solid var(--accent);">
+      <div class="hero-badge" style="background: var(--accent-light); color: var(--accent);">
+        Consultations Programmées
+      </div>
+      <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">
+        3. Prendre Rendez-vous par Discipline
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 20px;">
+        Pour les rendez-vous programmables, contactez directement le professionnel concerné ou utilisez sa plateforme de réservation :
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+        <!-- Médecine Générale CareSquad -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;">
+          <h3 style="color: var(--primary-deep); font-size: 1.1rem; margin-bottom: 6px;">🩺 Médecins Généralistes</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Dr Fey, Dr Lou Silvente, Dr Eva Henry, Dr Bernabeu-Brulé, Dr Charton, Dr Piza, Dr Potrel.</p>
+          <div style="display: flex; gap: 8px;">
+            <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="btn-pro-rdv" style="font-size: 0.82rem;">CareSquad ↗</a>
+            <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.82rem;">📞 04 74 30 40 20</a>
+          </div>
+        </div>
+
+        <!-- Infirmier Pratique Avancée (IPA) -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; border-top: 3px solid #06b6d4;">
+          <h3 style="color: #0891b2; font-size: 1.1rem; margin-bottom: 6px;">📋 Infirmier en Pratique Avancée (IPA)</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">M. Davide DOS REIS (suivi des pathologies chroniques stabilisées, renouvellement d'ordonnances).</p>
+          <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" rel="noopener" class="btn-pro-rdv" style="background: #06b6d4; font-size: 0.82rem; width: 100%;">Demande de RDV IPA (CareSquad) ↗</a>
+        </div>
+
+        <!-- Assistante Médicale -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; border-top: 3px solid #8b5cf6;">
+          <h3 style="color: #7c3aed; font-size: 1.1rem; margin-bottom: 6px;">👩‍💼 Assistante Médicale (Jennifer)</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Accueil, questionnaires, pré-consultation, RDV d'évaluation téléphonique.</p>
+          <div style="display: flex; gap: 8px;">
+            <a href="tel:0428360070" class="btn-pro-call" style="font-size: 0.82rem;">📞 04 28 36 00 70</a>
+            <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" rel="noopener" class="btn-pro-rdv" style="background: #8b5cf6; font-size: 0.82rem;">Message ↗</a>
+          </div>
+        </div>
+
+        <!-- ASALÉE -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;">
+          <h3 style="color: var(--primary-deep); font-size: 1.1rem; margin-bottom: 6px;">🌿 Infirmière ASALÉE</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Mme Amandine Rota Coin (Éducation thérapeutique, diabète, sevrage tabagique).</p>
+          <a href="equipe_infirmiere-asalee.html" class="btn-pro-rdv" style="width: 100%; font-size: 0.82rem;">Modalités d'accès</a>
+        </div>
+
+        <!-- IDEL -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;">
+          <h3 style="color: var(--primary-deep); font-size: 1.1rem; margin-bottom: 6px;">💉 Infirmières Libérales (IDEL)</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Soins à domicile 7j/7 et permanence cabinet 8h-8h30 sans rendez-vous.</p>
+          <a href="tel:0607067569" class="btn-pro-call" style="width: 100%; font-size: 0.82rem;">📞 06 07 06 75 69</a>
+        </div>
+
+        <!-- Kinés -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;">
+          <h3 style="color: var(--primary-deep); font-size: 1.1rem; margin-bottom: 6px;">👐 Kinésithérapeutes</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Mme Parrenin et Mme Couard. Du lundi au vendredi de 8h à 19h.</p>
+          <a href="tel:0474470781" class="btn-pro-call" style="width: 100%; font-size: 0.82rem;">📞 04 74 47 07 81</a>
+        </div>
+
+        <!-- Ortho -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;">
+          <h3 style="color: var(--primary-deep); font-size: 1.1rem; margin-bottom: 6px;">🗣️ Orthophoniste</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Mme Aline Grand. Bilan et suivi du langage oral et écrit.</p>
+          <a href="https://perfactive.fr" target="_blank" rel="noopener" class="btn-pro-rdv" style="width: 100%; font-size: 0.82rem;">Liste d'attente Perfactive ↗</a>
+        </div>
+
+        <!-- Diététicienne -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;">
+          <h3 style="color: var(--primary-deep); font-size: 1.1rem; margin-bottom: 6px;">🥗 Diététicienne</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Mme Jessy Evrard. Prise de rendez-vous en ligne ou téléphone.</p>
+          <div style="display: flex; gap: 8px;">
+            <a href="tel:0659736771" class="btn-pro-call" style="font-size: 0.82rem;">📞 06 59 73 67 71</a>
+            <a href="https://www.madietenligne.fr" target="_blank" rel="noopener" class="btn-pro-rdv" style="font-size: 0.82rem;">En ligne ↗</a>
+          </div>
+        </div>
+
+        <!-- Échographie -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;">
+          <h3 style="color: var(--primary-deep); font-size: 1.1rem; margin-bottom: 6px;">🔬 Médecin Échographiste</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Dr Véronica Sulugiuc. Échographies sur ordonnance.</p>
+          <a href="equipe_radiologue.html" class="btn-pro-rdv" style="width: 100%; font-size: 0.82rem;">Réservation en ligne</a>
+        </div>
+
+        <!-- Ergos -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px;">
+          <h3 style="color: var(--primary-deep); font-size: 1.1rem; margin-bottom: 6px;">🧩 Ergothérapeutes</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">Mme Convert (07 68 83 23 48) &amp; Mme Goy (06 50 17 07 27).</p>
+          <a href="equipe_ergotherapeutes.html" class="btn-pro-rdv" style="width: 100%; font-size: 0.82rem;">Contacts &amp; Fiche</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 : NOUVEAUX PATIENTS -->
+    <section id="nouveaux-patients" class="content-wrapper" style="margin-bottom: 32px; border-left: 6px solid var(--primary);">
+      <div class="hero-badge">Accès aux Soins</div>
+      <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">
+        4. "Nouveaux Patients" : Demande de Médecin Traitant
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 14px;">
+        Face à la pénurie médicale, les médecins généralistes de Polliat concentrent prioritairement l'accueil de nouveaux patients sur leur <strong>bassin de vie géographique</strong> immédiat (commune de Polliat et communes limitrophes directes sans médecin traitant).
+      </p>
+
+      <div class="alert-box info">
+        <div class="alert-icon">📝</div>
+        <div>
+          <strong>Comment formuler votre demande ?</strong><br>
+          • Vous venez d'emménager sur le secteur de Polliat : déposez un dossier de demande de médecin traitant auprès du secrétariat médical muni d'un justificatif de domicile récent.<br>
+          • Les demandes sont étudiées collégialement par l'équipe médicale pour répartir équitablement les patientèles.<br>
+          • Pour les enfants nouveaux-nés de parents déjà suivis au cabinet, la déclaration de médecin traitant se fait automatiquement lors de la première consultation de suivi.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 : CONGÉS & ABSENCES -->
+    <section id="conges" class="content-wrapper" style="margin-bottom: 32px;">
+      <div class="hero-badge">Transparence &amp; Remplacements</div>
+      <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">
+        5. Périodes de Congés &amp; Remplacements des Médecins
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 14px;">
+        Afin d'anticiper vos renouvellements de traitement avant le départ en congé de votre médecin traitant :
+      </p>
+      
+      <div id="conges-container">
+        <div style="text-align: center; color: var(--text-muted); padding: 14px;">Chargement des informations de congés...</div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 : TÉLÉCONSULTATION -->
+    <section id="teleconsultation" class="content-wrapper" style="margin-bottom: 32px;">
+      <div class="hero-badge">Consultation à Distance</div>
+      <h2 style="font-size: 1.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 12px;">
+        6. Téléconsultation Médicale via CareSquad
+      </h2>
+      <p style="color: var(--text-muted); margin-bottom: 14px;">
+        La téléconsultation est accessible sur la plateforme sécurisée CareSquad pour certains motifs ne nécessitant pas d'examen physique direct (analyse de résultats biologiques, adaptation de posologie, avis sur dossier).
+      </p>
+      <ul>
+        <li>Vous devez être connu du cabinet médical (au moins une consultation physique dans les 12 mois précédents).</li>
+        <li>Vous devez disposer d'un smartphone ou d'un ordinateur muni d'une caméra et d'un micro fonctionnels.</li>
+        <li>La téléconsultation est facturée selon les mêmes tarifs conventionnés qu'une consultation en présentiel et remboursée par la Sécurité Sociale.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+      <div>&copy; 2026 Maison de Santé de Polliat • Guide des Rendez-vous</div>
+      <div><a href="index.html">Accueil</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>

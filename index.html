@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison de Santé Pluridisciplinaire de Polliat | Accueil &amp; Orientation</title>
+  <meta name="description" content="Site officiel de la Maison de santé pluridisciplinaire multisites de Polliat (01310). Médecins généralistes, infirmier en pratique avancée (IPA), infirmières ASALÉE et libérales, assistante médicale, kinés, ergothérapeutes, orthophoniste, diététicienne, pharmaciennes et échographiste.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="nav.js" defer></script>
+  <script src="search.js" defer></script>
+  <script src="planning.js" defer></script>
+</head>
+<body>
+
+  <div class="bg-decor"></div>
+
+  <!-- BANDEAU URGENCE VITALE PLEINE LARGEUR -->
+  <aside class="urgent-bar" aria-label="Bandeau Urgence Vitale">
+    <div class="urgent-bar-content">
+      <div class="urgent-bar-left">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span><strong>Urgence vitale ou horaires de nuit/garde</strong> : composez immédiatement le <strong>15</strong> (SAMU)</span>
+      </div>
+      <a href="tel:15" class="urgent-btn">
+        <span>📞</span>
+        <span>Appeler le 15</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION PRINCIPALE -->
+  <header class="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="logo-embleme.png" alt="Logo Maison de Santé de Polliat" class="nav-brand-logo">
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">Maison de Santé de Polliat</span>
+          <span class="nav-brand-sub">Coordination pluriprofessionnelle de proximité</span>
+        </div>
+      </a>
+
+      <button class="burger-btn" id="burger-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+        <span>☰</span>
+        <span>Menu</span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="equipe.html">L'Équipe</a>
+        <a href="rdv.html">Rendez-vous &amp; Urgences</a>
+        <a href="projet-de-sante.html">Projet de Santé</a>
+        <a href="prevention.html">Prévention</a>
+        <a href="acces-contact.html">Accès &amp; Contact</a>
+        <a href="avis.html">Boîte à idées</a>
+        <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="nav-cta-rdv">Prendre RDV ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-badge">
+        <span>🏥</span>
+        <span>Maison de Santé Pluridisciplinaire Multisites de Polliat</span>
+      </div>
+      <h1 class="hero-title">Votre santé au cœur d'une <span>équipe coordonnée</span></h1>
+      <p class="hero-desc">
+        Un regroupement de professionnels médicaux et paramédicaux réunis au sein d'un projet de santé commun pour vous garantir un parcours de soins continu, humain et de qualité.
+      </p>
+
+      <div class="hero-chips">
+        <span class="hero-chip">📍 10 rue de l'Iragnon, 01310 Polliat</span>
+        <span class="hero-chip">📞 Secrétariat Médical : <a href="tel:0474304020" style="color: inherit; text-decoration: underline;"><strong>04 74 30 40 20</strong></a></span>
+        <span class="hero-chip">📞 Ligne directe Cabinet Dr Fey &amp; Jennifer : <a href="tel:0428360070" style="color: inherit; text-decoration: underline;"><strong>04 28 36 00 70</strong></a></span>
+        <span class="hero-chip">♿ Bâtiment accessible PMR • Parking gratuit</span>
+      </div>
+    </section>
+
+    <!-- RECHERCHE RAPIDE INSTANTANÉE -->
+    <div class="search-bar-wrap">
+      <span class="search-icon-inside" aria-hidden="true">🔍</span>
+      <input type="search" class="search-input" id="site-search-input" placeholder="Rechercher un médecin, Jennifer, IPA, infirmière, kiné, horaire..." aria-label="Rechercher sur le site de la Maison de santé">
+      <div class="search-results-dropdown" id="site-search-results" role="listbox"></div>
+    </div>
+
+    <!-- BANDEAU PROCHAIN SAMEDI DYNAMIQUE -->
+    <div id="next-duty-doctor" class="alert-box warning" style="margin-bottom: 30px;">
+      <div>
+        <strong>Samedi matin (8h-12h) :</strong> Garde assurée par l'un des médecins pour les <strong>urgences uniquement</strong>.
+      </div>
+    </div>
+
+    <!-- TRIAGE BENTO GRID -->
+    <section aria-labelledby="triage-title">
+      <div class="section-header">
+        <h2 class="section-title" id="triage-title">Comment pouvons-nous vous aider ?</h2>
+      </div>
+
+      <div class="triage-grid">
+        <!-- Carte 1 : Urgences / Soins non programmés -->
+        <article class="triage-card theme-urgence">
+          <div class="triage-icon">🚨</div>
+          <h3 class="triage-title">Urgence du Jour</h3>
+          <p class="triage-text">
+            Problème de santé soudain à voir dans la journée. Des créneaux de soins non programmés sont réservés chaque jour ouvrable.
+          </p>
+          <a href="rdv.html#urgences" class="triage-btn btn-urgence">Consignes &amp; Démarche →</a>
+        </article>
+
+        <!-- Carte 2 : Samedi matin -->
+        <article class="triage-card theme-samedi">
+          <div class="triage-icon">📅</div>
+          <h3 class="triage-title">Samedi Matin</h3>
+          <p class="triage-text">
+            De 8h à 12h, un seul médecin assure la permanence médicale pour l'ensemble du cabinet, <strong>exclusivement pour les urgences</strong>.
+          </p>
+          <a href="rdv.html#samedi" class="triage-btn btn-samedi">Voir le planning de garde →</a>
+        </article>
+
+        <!-- Carte 3 : Prise de RDV programmée via CareSquad -->
+        <article class="triage-card theme-rdv">
+          <div class="triage-icon">🗓️</div>
+          <h3 class="triage-title">Consultation de Suivi</h3>
+          <p class="triage-text">
+            Renouvellement d'ordonnance, suivi de nourrisson, certificat, bilan annuel. Prenez rendez-vous en ligne via notre portail sécurisé CareSquad.
+          </p>
+          <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="triage-btn btn-rdv">Prendre RDV sur CareSquad ↗</a>
+        </article>
+
+        <!-- Carte 4 : Nouveaux arrivants -->
+        <article class="triage-card theme-nouveau">
+          <div class="triage-icon">👥</div>
+          <h3 class="triage-title">Nouveaux Patients</h3>
+          <p class="triage-text">
+            Vous emménagez sur le secteur de Polliat et cherchez un médecin traitant ? Consultez les critères d'admission et démarches d'inscription.
+          </p>
+          <a href="rdv.html#nouveaux-patients" class="triage-btn btn-nouveau">Procédure d'accueil →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- LES PROFESSIONNELS DE SANTÉ DE LA MAISON DE SANTÉ -->
+    <section aria-labelledby="equipe-title">
+      <div class="section-header">
+        <h2 class="section-title" id="equipe-title">L'Équipe Pluriprofessionnelle</h2>
+        <a href="equipe.html" class="section-link">Voir tous les professionnels →</a>
+      </div>
+
+      <div class="pro-grid">
+        <!-- 1. Médecins Généralistes -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">🩺</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Médecine Générale</span>
+              <h3 class="pro-name">Cabinet Médical</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Dr BERNABEU-BRULÉ, Dr CHARTON, Dr FEY, Dr PIZA, Dr POTREL, Dr SILVENTE, Dr HENRY. Consultations sur rendez-vous du lundi au samedi matin.
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon, Polliat</div>
+            <div class="pro-meta-item">📞 Secrétariat : 04 74 30 40 20 / 04 28 36 00 70</div>
+          </div>
+          <div class="pro-actions">
+            <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="btn-pro-rdv">RDV CareSquad ↗</a>
+            <a href="equipe_medecins.html" class="btn-pro-call">Fiche du cabinet</a>
+          </div>
+        </article>
+
+        <!-- 2. Infirmier en Pratique Avancée (IPA) -->
+        <article class="pro-card" style="border-top: 3px solid #06b6d4;">
+          <div class="pro-head">
+            <div class="pro-avatar" style="background: rgba(6, 182, 212, 0.12); color: #0891b2;">📋</div>
+            <div class="pro-info">
+              <span class="pro-role-badge" style="background: rgba(6, 182, 212, 0.15); color: #0891b2;">Pratique Avancée</span>
+              <h3 class="pro-name">M. Davide DOS REIS</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Suivi clinique approfondi des pathologies chroniques stabilisées (diabète, HTA, insuffisance cardiaque), renouvellement d'ordonnances en binôme avec le Dr FEY.
+            <div class="pro-meta-item">📍 Au cabinet médical de Polliat</div>
+            <div class="pro-meta-item">🤝 Suivi en alternance avec le médecin traitant</div>
+          </div>
+          <div class="pro-actions">
+            <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" rel="noopener" class="btn-pro-rdv" style="background: #06b6d4;">Message RDV ↗</a>
+            <a href="equipe_infirmier-pratique-avancee.html" class="btn-pro-call">En savoir plus</a>
+          </div>
+        </article>
+
+        <!-- 3. Assistante Médicale -->
+        <article class="pro-card" style="border-top: 3px solid #8b5cf6;">
+          <div class="pro-head">
+            <div class="pro-avatar" style="background: rgba(139, 92, 246, 0.12); color: #7c3aed;">👩‍💼</div>
+            <div class="pro-info">
+              <span class="pro-role-badge" style="background: rgba(139, 92, 246, 0.15); color: #7c3aed;">Assistante Médicale</span>
+              <h3 class="pro-name">Jennifer</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Accueil, pré-consultation (tension, constantes, questionnaires), préparation des dossiers complexes et rendez-vous d'évaluation.
+            <div class="pro-meta-item">📞 Ligne dédiée : 04 28 36 00 70 (IA 24h/7j)</div>
+            <div class="pro-meta-item">⏰ Rappels : Lun/Ven 8h-9h • Mar/Jeu 12h30-14h</div>
+          </div>
+          <div class="pro-actions">
+            <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" rel="noopener" class="btn-pro-rdv" style="background: #8b5cf6;">Laisser un message ↗</a>
+            <a href="equipe_assistante-medicale.html" class="btn-pro-call">Son rôle</a>
+          </div>
+        </article>
+
+        <!-- 4. Infirmière ASALÉE -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">🌿</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Santé Publique</span>
+              <h3 class="pro-name">Mme Amandine ROTA COIN</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Infirmière déléguée à la santé publique (Protocole Asalée) : éducation thérapeutique (diabète, BPCO), arrêt du tabac, repérage mémoire et risques CV. 100% pris en charge.
+            <div class="pro-meta-item">📍 Au sein du cabinet médical</div>
+            <div class="pro-meta-item">🤝 Consultations en lien direct avec votre médecin</div>
+          </div>
+          <div class="pro-actions">
+            <a href="equipe_infirmiere-asalee.html" class="btn-pro-rdv" style="flex:1;">Découvrir ASALÉE</a>
+          </div>
+        </article>
+
+        <!-- 5. Infirmières Libérales -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">💉</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Soins Infirmiers 7j/7</span>
+              <h3 class="pro-name">Infirmières Libérales (IDEL)</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Mme Sandra LEPLE, Mme Carole PERDRIX, Mme Angélique PRABEL, Mme Justine POIX. Soins à domicile 7j/7 de 6h à 19h30. Permanence au cabinet de 8h à 8h30.
+            <div class="pro-meta-item">📍 10 rue de l'Iragnon, Polliat</div>
+            <div class="pro-meta-item">📞 Ligne directe : 06 07 06 75 69</div>
+          </div>
+          <div class="pro-actions">
+            <a href="tel:0607067569" class="btn-pro-call">06 07 06 75 69</a>
+            <a href="equipe_infirmieres-liberales.html" class="btn-pro-rdv">En savoir plus</a>
+          </div>
+        </article>
+
+        <!-- 6. Masseurs-Kinésithérapeutes -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">👐</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Kinésithérapie</span>
+              <h3 class="pro-name">Kinésithérapeutes</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Mme Brigitte PARRENIN, Mme Pauline COUARD. Rééducation fonctionnelle, respiratoire, motrice. Cabinet et domiciles sur le secteur.
+            <div class="pro-meta-item">🕒 Lun-Ven de 8h à 19h sur rendez-vous</div>
+            <div class="pro-meta-item">📞 Téléphone : 04 74 47 07 81</div>
+          </div>
+          <div class="pro-actions">
+            <a href="tel:0474470781" class="btn-pro-call">04 74 47 07 81</a>
+            <a href="equipe_kinesitherapeutes.html" class="btn-pro-rdv">Détails soins</a>
+          </div>
+        </article>
+
+        <!-- 7. Ergothérapeutes -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">🧩</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Ergothérapie</span>
+              <h3 class="pro-name">Ergothérapeutes</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Mme Chloé CONVERT, Mme Mélissa GOY. Autonomie au quotidien, aménagement du domicile, réadaptation et pédiatrie (troubles des apprentissages).
+            <div class="pro-meta-item">📞 Convert : 07 68 83 23 48 • Goy : 06 50 17 07 27</div>
+          </div>
+          <div class="pro-actions">
+            <a href="equipe_ergotherapeutes.html" class="btn-pro-rdv" style="flex:1;">Consulter les fiches</a>
+          </div>
+        </article>
+
+        <!-- 8. Orthophoniste -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">🗣️</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Orthophonie</span>
+              <h3 class="pro-name">Mme Aline GRAND</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Bilans et rééducation des troubles du langage oral, écrit, et de la déglutition pour enfants et adultes. Inscription sur liste d'attente Perfactive.
+            <div class="pro-meta-item">📞 Contact : 07 56 82 86 75</div>
+            <div class="pro-meta-item">🌐 Inscription : perfactive.fr</div>
+          </div>
+          <div class="pro-actions">
+            <a href="https://perfactive.fr" target="_blank" rel="noopener" class="btn-pro-rdv" style="flex:1;">Liste d'attente ↗</a>
+          </div>
+        </article>
+
+        <!-- 9. Diététicienne-Nutritionniste -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">🥗</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Nutrition</span>
+              <h3 class="pro-name">Mme Jessy EVRARD</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Bilan nutritionnel, accompagnement du surpoids, diabète, troubles digestifs. Consultations au cabinet et téléconsultations.
+            <div class="pro-meta-item">📞 Contact : 06 59 73 67 71</div>
+            <div class="pro-meta-item">🌐 Prise de RDV : madietenligne.fr</div>
+          </div>
+          <div class="pro-actions">
+            <a href="https://www.madietenligne.fr" target="_blank" rel="noopener" class="btn-pro-rdv" style="flex:1;">RDV diététique ↗</a>
+          </div>
+        </article>
+
+        <!-- 10. Pharmacie de Polliat -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">💊</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Pharmacie</span>
+              <h3 class="pro-name">Pharmacie de Polliat</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Dr Aurélie GENTON, Dr Michèle SCHWARTZ. Délivrance des médicaments, conseils de santé, matériel médical, vaccinations et dépistages.
+            <div class="pro-meta-item">🕒 Du Lun au Samedi jusqu'à 19h30 (Sam 19h)</div>
+            <div class="pro-meta-item">📞 Téléphone : 04 74 30 40 48</div>
+          </div>
+          <div class="pro-actions">
+            <a href="tel:0474304048" class="btn-pro-call">04 74 30 40 48</a>
+            <a href="equipe_pharmaciennes.html" class="btn-pro-rdv">Horaires &amp; Services</a>
+          </div>
+        </article>
+
+        <!-- 11. Radiologue / Échographiste -->
+        <article class="pro-card">
+          <div class="pro-head">
+            <div class="pro-avatar">🔬</div>
+            <div class="pro-info">
+              <span class="pro-role-badge">Radiologie</span>
+              <h3 class="pro-name">Dr Véronica SULUGIUC</h3>
+            </div>
+          </div>
+          <div class="pro-details">
+            Médecin échographiste radiologue. Échographies abdominales, pelviennes, urinaires, ostéo-articulaires et thyroïdiennes.
+            <div class="pro-meta-item">📅 Sur rendez-vous uniquement en ligne sur ordonnance</div>
+            <div class="pro-meta-item">📍 Au cabinet médical de Polliat</div>
+          </div>
+          <div class="pro-actions">
+            <a href="equipe_radiologue.html" class="btn-pro-rdv" style="flex:1;">Prendre RDV échographie</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION PRÉVENTION & PROJET MÉDICAL -->
+    <section style="margin-bottom: 48px;">
+      <div class="content-wrapper" style="background: linear-gradient(135deg, #ffffff, var(--primary-ultralight));">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div class="hero-badge" style="align-self: flex-start; margin-bottom: 0;">
+            <span>🤝</span>
+            <span>Une démarche coordonnée labellisée par l'ARS</span>
+          </div>
+          <h2 style="font-size: 1.6rem; font-weight: 800; color: var(--text-main);">
+            Pourquoi choisir une Maison de Santé Pluridisciplinaire ?
+          </h2>
+          <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6;">
+            La MSP de Polliat permet aux professionnels de santé de collaborer activement autour de votre dossier de soins : concertations pluriprofessionnelles régulières, protocoles d'accord validés, infirmiers en pratique avancée (IPA), actions de prévention conjointes (dépistages des cancers, éducation thérapeutique ASALÉE) et partage sécurisé des données au sein de l'équipe.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px;">
+            <a href="projet-de-sante.html" class="triage-btn btn-nouveau">Découvrir le projet de santé →</a>
+            <a href="prevention.html" class="triage-btn" style="background: #ffffff; border: 1px solid var(--card-border); color: var(--text-main);">Nos actions de prévention →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="main-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Maison de Santé de Polliat</h4>
+        <p>10 rue de l'Iragnon, 01310 POLLIAT</p>
+        <p>Secrétariat médical : <strong>04 74 30 40 20</strong></p>
+        <p>Ligne directe Dr Fey &amp; Jennifer : <strong>04 28 36 00 70</strong></p>
+        <p>Structure pluridisciplinaire multisites labellisée par l'Agence Régionale de Santé (ARS) Auvergne-Rhône-Alpes.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="equipe.html">L'Équipe de soins</a></li>
+          <li><a href="rdv.html">Prise de RDV &amp; Urgences</a></li>
+          <li><a href="projet-de-sante.html">Projet de santé</a></li>
+          <li><a href="prevention.html">Prévention &amp; Dépistages</a></li>
+          <li><a href="acces-contact.html">Accès &amp; Transports</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Urgences &amp; Écoute</h4>
+        <ul class="footer-links">
+          <li><a href="tel:15"><strong>SAMU : 15</strong></a></li>
+          <li><a href="tel:112">Numéro européen : 112</a></li>
+          <li><a href="tel:114">Personnes sourdes : 114</a></li>
+          <li><a href="tel:3966">Médecin de garde le soir : 39 66</a></li>
+          <li><a href="avis.html">Boîte à idées &amp; Satisfaction</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Secrétariats Médicaux</h4>
+        <p><strong>Secrétariat Général :</strong><br>04 74 30 40 20 (8h-12h &amp; 14h-17h)</p>
+        <p><strong>Ligne Directe Dr Fey :</strong><br>04 28 36 00 70 (IA 24h/7j)</p>
+        <p><strong>Samedi Matin :</strong><br>8h00 - 12h00 (Urgences uniquement)</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>&copy; 2026 Maison de Santé Pluridisciplinaire de Polliat • Tous droits réservés</div>
+      <div style="display: flex; gap: 16px;">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Protection des données (RGPD)</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
