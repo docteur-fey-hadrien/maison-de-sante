@@ -63,136 +63,142 @@
         Médecins généralistes associés, assistante médicale, infirmier en pratique avancée (IPA) et infirmière de santé publique (ASALÉE) vous accueillent au 10 rue de l'Iragnon, 01310 Polliat.
       </p>
 
-      <!-- BLOC TELEPHONES -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 25px;">
-        <div class="alert-box info" style="margin: 0;">
-          <div class="alert-icon">📞</div>
+      <!-- PRÉSENTATION DES DEUX ENTITÉS MÉDICALES -->
+      <div style="background: var(--warm-light); border: 1px solid var(--warm-border); border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+          <span style="font-size: 1.4rem;">ℹ️</span>
+          <strong style="color: var(--warm-deep); font-size: 1.05rem;">Organisation des Consultations Médicales (2 Cabinets Séparés)</strong>
+        </div>
+        <p style="font-size: 0.92rem; color: #78350f; line-height: 1.5;">
+          Au 10 rue de l'Iragnon, la médecine générale est assurée par <strong>deux entités médicales séparées</strong> disposant chacune de leur propre secrétariat et de leur portail de prise de rendez-vous. Merci de sélectionner directement le cabinet de votre médecin référent.
+        </p>
+      </div>
+
+      <!-- ENTITÉ 1 : CABINET DR BERNABEU, CHARTON, PIZA, POTREL -->
+      <div class="content-block" style="background: #ffffff; border: 1px solid var(--card-border); border-top: 4px solid var(--primary); border-radius: 14px; padding: 24px; margin-bottom: 30px; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
           <div>
-            <strong>Secrétariat général du cabinet :</strong><br>
-            <a href="tel:0474304020" style="color: inherit; font-size: 1.15rem; font-weight: 800; text-decoration: underline;">04 74 30 40 20</a><br>
-            Dr Bernabeu-Brulé, Dr Charton, Dr Piza, Dr Potrel (8h-12h &amp; 14h-17h).
+            <span class="pro-role-badge" style="background: #f1f5f9; color: var(--text-muted);">Cabinet Médical 1 • Portail MadeForMed</span>
+            <h2 style="font-size: 1.35rem; color: var(--primary-deep); margin-top: 6px;">Cabinet des Dr Bernabeu-Brulé, Charton, Piza &amp; Potrel</h2>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid var(--card-border); padding: 8px 14px; border-radius: 10px; font-size: 0.9rem;">
+            📞 Secrétariat (Valentine &amp; Océane) : <a href="tel:0474304020" style="color: var(--primary-dark); font-weight: 800;">04 74 30 40 20</a> (8h-12h &amp; 14h-17h)
           </div>
         </div>
 
-        <div class="alert-box info" style="margin: 0; background: rgba(139, 92, 246, 0.08); border-color: rgba(139, 92, 246, 0.25); color: #5b21b6;">
-          <div class="alert-icon">👩‍💼</div>
-          <div>
-            <strong>Ligne directe Cabinet Dr FEY &amp; Jennifer :</strong><br>
-            <a href="tel:0428360070" style="color: inherit; font-size: 1.15rem; font-weight: 800; text-decoration: underline;">04 28 36 00 70</a><br>
-            Standard vocal IA 24h/7j • Rappels Jennifer : Lun/Ven 8h-9h, Mar/Jeu 12h30-14h.
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 18px;">
+          Secrétariat sur place assuré par Valentine et Océane. Prise de rendez-vous en ligne via le portail MadeForMed (santé.pro).
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+          <!-- Dr Bernabeu-Brulé -->
+          <div style="background: #f8fafc; border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <h3 style="font-size: 1.05rem; color: var(--text-main); margin: 0;">Dr Marie-Agnès BERNABEU-BRULÉ</h3>
+              <span>👩‍⚕️</span>
+            </div>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">Médecin généraliste associée.</p>
+            <div style="display: flex; gap: 6px;">
+              <a href="https://docteur-bernabeu-brule.sante.pro/rdv" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.8rem; padding: 8px;">RDV MadeForMed ↗</a>
+              <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.8rem; padding: 8px;">04 74 30 40 20</a>
+            </div>
+          </div>
+
+          <!-- Dr Charton -->
+          <div style="background: #f8fafc; border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <h3 style="font-size: 1.05rem; color: var(--text-main); margin: 0;">Dr Damien CHARTON</h3>
+              <span>👨‍⚕️</span>
+            </div>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">Médecin généraliste associé.</p>
+            <div style="display: flex; gap: 6px;">
+              <a href="https://docteur-charton.sante.pro/rdv" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.8rem; padding: 8px;">RDV MadeForMed ↗</a>
+              <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.8rem; padding: 8px;">04 74 30 40 20</a>
+            </div>
+          </div>
+
+          <!-- Dr Piza -->
+          <div style="background: #f8fafc; border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <h3 style="font-size: 1.05rem; color: var(--text-main); margin: 0;">Dr Kathleen PIZA</h3>
+              <span>👩‍⚕️</span>
+            </div>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">Médecin généraliste associée.</p>
+            <div style="display: flex; gap: 6px;">
+              <a href="https://docteur-piza.sante.pro/rdv" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.8rem; padding: 8px;">RDV MadeForMed ↗</a>
+              <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.8rem; padding: 8px;">04 74 30 40 20</a>
+            </div>
+          </div>
+
+          <!-- Dr Potrel -->
+          <div style="background: #f8fafc; border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <h3 style="font-size: 1.05rem; color: var(--text-main); margin: 0;">Dr Élodie POTREL</h3>
+              <span>👩‍⚕️</span>
+            </div>
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">Médecin généraliste associée.</p>
+            <div style="display: flex; gap: 6px;">
+              <a href="https://potrel.sante.pro/rdv" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.8rem; padding: 8px;">RDV MadeForMed ↗</a>
+              <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.8rem; padding: 8px;">04 74 30 40 20</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- LISTE DES PRATICIENS AVEC LEURS PORTAILS RESPECTIFS -->
-      <div class="content-block">
-        <h2>Les Médecins et leurs Portails de Rendez-vous</h2>
+      <!-- ENTITÉ 2 : CABINET DU DR HADRIEN FEY & ÉQUIPE -->
+      <div class="content-block" style="background: #ffffff; border: 1px solid var(--card-border); border-top: 4px solid var(--accent); border-radius: 14px; padding: 24px; margin-bottom: 30px; box-shadow: var(--shadow-sm);">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
+          <div>
+            <span class="pro-role-badge" style="background: var(--primary-light); color: var(--primary-deep);">Cabinet Médical 2 • Portail CareSquad</span>
+            <h2 style="font-size: 1.35rem; color: var(--primary-deep); margin-top: 6px;">Cabinet du Dr Hadrien FEY &amp; son Équipe</h2>
+          </div>
+          <div style="background: var(--primary-ultralight); border: 1px solid var(--primary-light); padding: 8px 14px; border-radius: 10px; font-size: 0.9rem;">
+            📞 Téléphonie directe : <a href="tel:0428360070" style="color: var(--primary-dark); font-weight: 800;">04 28 36 00 70</a> (standard IA 24h/7j)
+          </div>
+        </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 14px;">
-          <!-- 1. Dr Fey (CareSquad) -->
-          <div style="background: #ffffff; border: 2px solid var(--primary-light); border-radius: 12px; padding: 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span class="pro-role-badge" style="background: var(--primary-light); color: var(--primary-deep);">Portail CareSquad</span>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 18px;">
+          Équipe médicale universitaire intégrée, avec assistante médicale dédiée (Jennifer), médecin assistante et interne Docteur Junior. Prise de rendez-vous et messagerie sécurisée via CareSquad.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+          <!-- Dr Hadrien Fey -->
+          <div style="background: #f8fafc; border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <h3 style="font-size: 1.05rem; color: var(--text-main); margin: 0;">Dr Hadrien FEY</h3>
               <span>👨‍⚕️</span>
             </div>
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 4px;">Dr Hadrien FEY</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
-              Maître de stage des universités (Lyon 1). Échographie clinique, dermoscopie, pédiatrie, gynécologie.
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
+              Médecin de famille, Maître de stage des universités (Lyon 1). Échographie clinique, pédiatrie, gynécologie.
             </p>
-            <div style="display: flex; gap: 8px;">
-              <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.84rem;">RDV CareSquad ↗</a>
-              <a href="tel:0428360070" class="btn-pro-call" style="font-size: 0.82rem;">04 28 36 00 70</a>
+            <div style="display: flex; gap: 6px;">
+              <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.8rem; padding: 8px;">RDV CareSquad ↗</a>
+              <a href="tel:0428360070" class="btn-pro-call" style="font-size: 0.8rem; padding: 8px;">04 28 36 00 70</a>
             </div>
           </div>
 
-          <!-- 2. Dr Lou Silvente (CareSquad) -->
-          <div style="background: #ffffff; border: 1px solid var(--card-border); border-radius: 12px; padding: 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span class="pro-role-badge" style="background: rgba(14, 165, 233, 0.15); color: #0369a1;">Portail CareSquad</span>
+          <!-- Dr Lou Silvente -->
+          <div style="background: #f8fafc; border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <h3 style="font-size: 1.05rem; color: var(--text-main); margin: 0;">Dr Lou SILVENTE</h3>
               <span>👩‍⚕️</span>
             </div>
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 4px;">Dr Lou SILVENTE</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
               Médecin assistante aux côtés du Dr FEY. Consultations de médecine générale et suivi régulier.
             </p>
-            <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="font-size: 0.84rem;">Prendre RDV (CareSquad) ↗</a>
+            <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="font-size: 0.8rem; padding: 8px; margin-top: auto;">RDV CareSquad ↗</a>
           </div>
 
-          <!-- 3. Dr Eva Henry (CareSquad) -->
-          <div style="background: #ffffff; border: 1px solid var(--card-border); border-radius: 12px; padding: 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span class="pro-role-badge" style="background: rgba(22, 163, 74, 0.12); color: #15803d;">Portail CareSquad</span>
+          <!-- Dr Eva Henry -->
+          <div style="background: #f8fafc; border: 1px solid var(--card-border); border-radius: 10px; padding: 16px; display: flex; flex-direction: column;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+              <h3 style="font-size: 1.05rem; color: var(--text-main); margin: 0;">Dr Eva HENRY</h3>
               <span>👩‍⚕️</span>
             </div>
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 4px;">Dr Eva HENRY</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
-              Interne Docteur Junior en 10e année (dès nov. 2026 pour 1 an). Consultations en autonomie clinique supervisée.
+            <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
+              Interne Docteur Junior en 10e année (dès nov. 2026). Consultations en autonomie clinique supervisée.
             </p>
-            <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="font-size: 0.84rem;">Prendre RDV (CareSquad) ↗</a>
-          </div>
-
-          <!-- 4. Dr Marie-Agnès Bernabeu-Brulé (MadeForMed) -->
-          <div style="background: #ffffff; border: 1px solid var(--card-border); border-radius: 12px; padding: 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span class="pro-role-badge" style="background: #f1f5f9; color: var(--text-muted);">Portail MadeForMed</span>
-              <span>👩‍⚕️</span>
-            </div>
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 4px;">Dr Marie-Agnès BERNABEU-BRULÉ</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
-              Médecin généraliste associée. Consultations de suivi et soins programmés au cabinet.
-            </p>
-            <div style="display: flex; gap: 8px;">
-              <a href="https://docteur-bernabeu-brule.sante.pro/rdv" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.84rem;">Prendre RDV ↗</a>
-              <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.82rem;">04 74 30 40 20</a>
-            </div>
-          </div>
-
-          <!-- 5. Dr Damien Charton (MadeForMed) -->
-          <div style="background: #ffffff; border: 1px solid var(--card-border); border-radius: 12px; padding: 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span class="pro-role-badge" style="background: #f1f5f9; color: var(--text-muted);">Portail MadeForMed</span>
-              <span>👨‍⚕️</span>
-            </div>
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 4px;">Dr Damien CHARTON</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
-              Médecin généraliste associé. Consultations de suivi et soins programmés au cabinet.
-            </p>
-            <div style="display: flex; gap: 8px;">
-              <a href="https://docteur-charton.sante.pro/rdv" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.84rem;">Prendre RDV ↗</a>
-              <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.82rem;">04 74 30 40 20</a>
-            </div>
-          </div>
-
-          <!-- 6. Dr Kathleen Piza (MadeForMed) -->
-          <div style="background: #ffffff; border: 1px solid var(--card-border); border-radius: 12px; padding: 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span class="pro-role-badge" style="background: #f1f5f9; color: var(--text-muted);">Portail MadeForMed</span>
-              <span>👩‍⚕️</span>
-            </div>
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 4px;">Dr Kathleen PIZA</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
-              Médecin généraliste associée. Consultations de suivi et soins programmés au cabinet.
-            </p>
-            <div style="display: flex; gap: 8px;">
-              <a href="https://docteur-piza.sante.pro/rdv" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.84rem;">Prendre RDV ↗</a>
-              <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.82rem;">04 74 30 40 20</a>
-            </div>
-          </div>
-
-          <!-- 7. Dr Elodie Potrel (MadeForMed) -->
-          <div style="background: #ffffff; border: 1px solid var(--card-border); border-radius: 12px; padding: 18px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-              <span class="pro-role-badge" style="background: #f1f5f9; color: var(--text-muted);">Portail MadeForMed</span>
-              <span>👩‍⚕️</span>
-            </div>
-            <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 4px;">Dr Élodie POTREL</h3>
-            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px; flex-grow: 1;">
-              Médecin généraliste associée. Consultations de suivi et soins programmés au cabinet.
-            </p>
-            <div style="display: flex; gap: 8px;">
-              <a href="https://potrel.sante.pro/rdv" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="flex:1; font-size: 0.84rem;">Prendre RDV ↗</a>
-              <a href="tel:0474304020" class="btn-pro-call" style="font-size: 0.82rem;">04 74 30 40 20</a>
-            </div>
+            <a href="https://rdv.caresquad.fr/maisondesante-polliat" target="_blank" rel="noopener" class="triage-btn btn-rdv" style="font-size: 0.8rem; padding: 8px; margin-top: auto;">RDV CareSquad ↗</a>
           </div>
         </div>
       </div>

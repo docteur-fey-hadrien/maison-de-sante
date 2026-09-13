@@ -13,8 +13,8 @@ const SITE_INDEX = [
   { title: "Dr Élodie POTREL", category: "Médecin Généraliste", desc: "Médecin généraliste associée au 10 rue de l'Iragnon. Tél : 04 74 30 40 20.", url: "equipe_medecins.html" },
   
   // Pratique Avancée & Assistante
-  { title: "Davide DOS REIS", category: "Infirmier en Pratique Avancée (IPA)", desc: "Suivi clinique approfondi des pathologies chroniques stabilisées (diabète, HTA, insuffisance cardiaque), renouvellement d'ordonnances en binôme médical.", url: "equipe_infirmier-pratique-avancee.html" },
-  { title: "Jennifer", category: "Assistante Médicale", desc: "Accueil, pré-consultation (tension, poids, constantes), préparation des dossiers complexes, standard IA 24h/7j au 04 28 36 00 70.", url: "equipe_assistante-medicale.html" },
+  { title: "Davide DOS REIS", category: "Infirmier en Pratique Avancée (IPA)", desc: "Suivi clinique approfondi des pathologies chroniques stabilisées (diabète, HTA, insuffisance cardiaque), renouvellement d'ordonnances en binôme exclusif avec l'équipe du Dr FEY.", url: "equipe_infirmier-pratique-avancee.html" },
+  { title: "Jennifer", category: "Assistante Médicale", desc: "Accueil, pré-consultation (tension, constantes), préparation des dossiers au sein de l'équipe du Dr FEY. Standard au 04 28 36 00 70.", url: "equipe_assistante-medicale.html" },
 
   // Paramédical & Soignants
   { title: "Mme Amandine ROTA COIN", category: "Infirmière ASALÉE", desc: "Éducation thérapeutique, diabète, BPCO, arrêt du tabac, repérage mémoire et risques cardiovasculaires (100% pris en charge).", url: "equipe_infirmiere-asalee.html" },
