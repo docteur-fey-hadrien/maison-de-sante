@@ -91,15 +91,17 @@
     padding: 16px;
     border-radius: var(--msp-radius);
     text-align: center;
-    border: 1px solid var(--msp-border);
+    box-sizing: border-box;
   }
   .msp-box-cab1 {
     background-color: #f8fafc;
-    border-top: 4px solid var(--msp-primary);
+    border: 2px solid var(--msp-primary) !important;
+    border-top: 4px solid var(--msp-primary) !important;
   }
   .msp-box-cab2 {
     background-color: var(--msp-secondary-soft);
-    border-top: 4px solid var(--msp-secondary);
+    border: 2px solid var(--msp-secondary) !important;
+    border-top: 4px solid var(--msp-secondary) !important;
   }
   .msp-contact-label {
     font-size: 12px;
@@ -322,7 +324,7 @@
   <div class="msp-contact-split">
     
     <!-- Cabinet 1 : 4 Medecins -->
-    <div class="msp-contact-box msp-box-cab1">
+    <div class="msp-contact-box msp-box-cab1" style="border: 2px solid var(--msp-primary); border-top: 4px solid var(--msp-primary);">
       <span class="msp-contact-label" style="color: var(--msp-primary);">Cabinet Drs Bernabeu-Brule, Charton, Piza, Potrel</span>
       <a href="tel:0474304020" class="msp-phone-big" style="color: var(--msp-primary);">04 74 30 40 20</a>
       <span class="msp-contact-desc">
@@ -332,7 +334,7 @@
     </div>
 
     <!-- Cabinet 2 : Dr Fey & Equipe -->
-    <div class="msp-contact-box msp-box-cab2">
+    <div class="msp-contact-box msp-box-cab2" style="border: 2px solid var(--msp-secondary); border-top: 4px solid var(--msp-secondary);">
       <span class="msp-contact-label" style="color: var(--msp-secondary);">Cabinet Dr FEY et son equipe</span>
       <a href="tel:0428360070" class="msp-phone-big" style="color: var(--msp-secondary);">04 28 36 00 70</a>
       <span class="msp-contact-desc">
@@ -431,14 +433,14 @@
 
     <!-- Davide Dos Reis - IPA -->
     <div class="msp-card" style="border-top: 3px solid var(--msp-accent);">
-      <h3 class="msp-title"><a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank">M. Davide DOS REIS</a></h3>
+      <h3 class="msp-title"><a href="https://drfeyhadrien.fr" target="_blank">M. Davide DOS REIS</a></h3>
       <span class="msp-subtitle">Infirmier en Pratique Avancee (Master clinique Bac+5)</span>
       <div class="msp-details">
         <p>Suivi approfondi des maladies chroniques stabilisees (diabete, HTA, insuffisance cardiaque, BPCO), bilans biologiques et ajustement d'ordonnances en alternance avec le Dr Hadrien FEY et ses internes.</p>
         <p>Telephone : <a href="tel:0428360070">04 28 36 00 70</a></p>
       </div>
       <div class="msp-actions">
-        <a href="https://rdv.caresquad.fr/maisondesante-polliat/book?motif=aeeb83c4-c17f-4ec3-8b20-be692a07656e" target="_blank" class="msp-btn" style="background: var(--msp-accent); color: white !important;">Demande de RDV IPA</a>
+        <a href="https://drfeyhadrien.fr" target="_blank" class="msp-btn" style="background: var(--msp-accent); color: white !important;">Prendre RDV</a>
       </div>
     </div>
 
